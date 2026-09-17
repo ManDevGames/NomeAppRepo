@@ -1,0 +1,176 @@
+{
+  "_meta": {
+    "status": "SEED_CONTENT",
+    "note": "TODO: Replace seed assessment content with approved content-owner questions and scoring matrix. This copy is illustrative placeholder content for development only and has not been clinically reviewed."
+  },
+  "patterns": [
+    {
+      "id": "abandonment",
+      "name": "Abandonment Fear Pattern",
+      "headline": "कहीं वह मुझे छोड़ न दे।",
+      "shortDescription": "You may notice a deep sensitivity to signs of distance or withdrawal from people you care about — even small ones — and a strong pull to hold on tightly when that happens.",
+      "experiencePoints": [
+        "A racing sense of worry when someone goes quiet or takes longer to reply",
+        "Difficulty relaxing into closeness without wondering when it might end",
+        "A tendency to seek frequent reassurance that the relationship is okay",
+        "Reading distance into ordinary, unrelated silences",
+        "Relief that can feel almost as intense as the original worry, once reassured"
+      ],
+      "triggers": [
+        "Delayed replies",
+        "Change in tone",
+        "Cancelled plans",
+        "Someone pulling away during conflict",
+        "Being left out of plans"
+      ],
+      "cycle": {
+        "trigger": "Someone you care about seems distant or slow to respond",
+        "thought": "\"कहीं वह मुझे छोड़ न दे।\" — They might be pulling away from me",
+        "emotion": "Anxiety, panic, urgency",
+        "reaction": "Seeking reassurance, checking in repeatedly, or pre-emptively withdrawing first",
+        "impact": "The relationship can start to feel more effortful, for both people",
+        "repeat": "The next sign of distance — real or imagined — restarts the cycle"
+      }
+    },
+    {
+      "id": "overthinking",
+      "name": "Overthinking & Anxiety Pattern",
+      "headline": "इसका मतलब क्या है?",
+      "shortDescription": "You may find your mind replaying conversations and moments long after they're over, searching for hidden meaning in things that were said — or left unsaid.",
+      "experiencePoints": [
+        "Re-reading messages multiple times, looking for a different meaning",
+        "Rehearsing conversations before they happen, and replaying them after",
+        "Feeling mentally tired from thinking through the same situation repeatedly",
+        "Struggling to simply take a neutral comment at face value",
+        "Noticing your mind jumps to worst-case interpretations"
+      ],
+      "triggers": [
+        "Ambiguous messages",
+        "Unclear plans",
+        "A shift in someone's usual tone",
+        "Being left with unanswered questions",
+        "Silence after a disagreement"
+      ],
+      "cycle": {
+        "trigger": "An ambiguous comment, message, or change in behaviour",
+        "thought": "\"इसका मतलब क्या है?\" — What does this actually mean?",
+        "emotion": "Unease, uncertainty, mental restlessness",
+        "reaction": "Analysing, re-reading, searching for clarity or hidden signals",
+        "impact": "Mental energy goes into analysis rather than the relationship itself",
+        "repeat": "The next ambiguous moment reopens the same search for meaning"
+      }
+    },
+    {
+      "id": "selfWorth",
+      "name": "Self-Worth Pattern",
+      "headline": "क्या मैं पर्याप्त हूं?",
+      "shortDescription": "You may notice your sense of being \"enough\" in a relationship shifting based on how the other person responds to you, rather than staying steady on its own.",
+      "experiencePoints": [
+        "Measuring your value by how much attention or affection you're receiving",
+        "Comparing yourself to others the person you care about is close to",
+        "A quiet, persistent question of whether you're truly wanted",
+        "Difficulty accepting compliments or reassurance at face value",
+        "Feeling especially low after any perceived rejection, however small"
+      ],
+      "triggers": [
+        "Being compared to someone else",
+        "Feeling overlooked or unchosen",
+        "Criticism, even when gently given",
+        "A partner's attention going elsewhere",
+        "Not receiving expected acknowledgment"
+      ],
+      "cycle": {
+        "trigger": "A moment of comparison, criticism, or feeling overlooked",
+        "thought": "\"क्या मैं पर्याप्त हूं?\" — Am I enough?",
+        "emotion": "Self-doubt, quiet shame, sadness",
+        "reaction": "Withdrawing, over-trying to prove your worth, or seeking validation",
+        "impact": "Your sense of self becomes tied to someone else's response",
+        "repeat": "The next comparison or perceived slight reopens the same question"
+      }
+    },
+    {
+      "id": "trustProtection",
+      "name": "Trust & Emotional Protection Pattern",
+      "headline": "क्या मैं इस व्यक्ति पर भरोसा कर सकता/सकती हूं?",
+      "shortDescription": "You may find yourself keeping a careful emotional distance, even in relationships that matter to you — staying alert, just in case.",
+      "experiencePoints": [
+        "Holding a part of yourself back, even when things are going well",
+        "Watching closely for signs that someone might let you down",
+        "Difficulty fully relaxing into trust, even over time",
+        "A tendency to test whether someone is reliable before opening up",
+        "Feeling safer when you keep some emotional independence"
+      ],
+      "triggers": [
+        "Being asked to be vulnerable",
+        "Someone getting emotionally close, quickly",
+        "Past experiences resurfacing in a new relationship",
+        "Being let down in a small way",
+        "Pressure to commit or open up"
+      ],
+      "cycle": {
+        "trigger": "A moment that asks for trust or vulnerability",
+        "thought": "\"क्या मैं इस व्यक्ति पर भरोसा कर सकता/सकती हूं?\" — Can I trust this person?",
+        "emotion": "Guardedness, watchfulness",
+        "reaction": "Holding back, staying alert, keeping some distance as protection",
+        "impact": "Closeness can feel capped, even in safe relationships",
+        "repeat": "The next opportunity for closeness triggers the same caution"
+      }
+    },
+    {
+      "id": "peoplePleasing",
+      "name": "People-Pleasing & Boundary Pattern",
+      "headline": "Relationship ठीक रखने के लिए मुझे कितना adjust करना चाहिए?",
+      "shortDescription": "You may notice yourself adjusting your own needs, opinions, or plans to keep the peace — sometimes before you've even considered what you actually want.",
+      "experiencePoints": [
+        "Saying yes when you would rather say no",
+        "Feeling responsible for other people's moods",
+        "Difficulty naming your own needs, even to yourself",
+        "Avoiding disagreement even on things that matter to you",
+        "Feeling resentment build up after repeatedly accommodating others"
+      ],
+      "triggers": [
+        "Sensing someone is unhappy",
+        "Being asked for something you don't want to give",
+        "Disagreement or conflict beginning to surface",
+        "Fear of being seen as difficult",
+        "Someone else's disappointment"
+      ],
+      "cycle": {
+        "trigger": "A request, disagreement, or sign that someone is unhappy",
+        "thought": "\"Relationship ठीक रखने के लिए मुझे कितना adjust करना चाहिए?\" — How much should I adjust to keep this okay?",
+        "emotion": "Discomfort, guilt, a pull to smooth things over",
+        "reaction": "Accommodating, agreeing, setting your own needs aside",
+        "impact": "Your own needs stay unspoken and can quietly build into resentment",
+        "repeat": "The next request or disagreement restarts the same adjustment"
+      }
+    },
+    {
+      "id": "repeatingPattern",
+      "name": "Repeating Relationship Pattern",
+      "headline": "लोग बदलते हैं, लेकिन कहानी वही क्यों रहती है?",
+      "shortDescription": "You may notice a familiar shape to your relationships — different people, but a similar story playing out: the same kind of ending, the same kind of hurt, or the same kind of dynamic.",
+      "experiencePoints": [
+        "Noticing the same conflict or disappointment showing up in different relationships",
+        "Feeling drawn to familiar dynamics, even when they haven't worked before",
+        "A sense of déjà vu in how relationships tend to unfold",
+        "Difficulty identifying what, specifically, keeps repeating",
+        "Wondering why circumstances change but outcomes don't"
+      ],
+      "triggers": [
+        "The early stage of a new relationship starting to feel familiar",
+        "Recognising a dynamic from a past relationship",
+        "A relationship ending in a familiar way",
+        "Others pointing out a pattern you hadn't named",
+        "Reflecting on past relationships together"
+      ],
+      "cycle": {
+        "trigger": "A new relationship or situation begins to unfold",
+        "thought": "\"लोग बदलते हैं, लेकिन कहानी वही क्यों रहती है?\" — People change, so why does the story stay the same?",
+        "emotion": "Familiarity mixed with quiet resignation",
+        "reaction": "Falling into familiar roles or choices without fully deciding to",
+        "impact": "The same kind of ending or difficulty tends to resurface",
+        "repeat": "The next relationship or situation begins the cycle again"
+      }
+    }
+  ]
+}
