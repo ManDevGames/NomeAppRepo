@@ -1,12 +1,11 @@
 import type { Metadata } from 'next'
-import { createAdminClient } from '@/lib/supabase/admin'
+import { getPublicResult } from '@/lib/result'
 import { getPatternById } from '@/lib/patterns'
 import { buildWhatsAppUrl } from '@/lib/whatsapp'
 import { ResultView } from '@/components/assessment/ResultView'
 import { ResultFallback } from '@/components/assessment/ResultFallback'
 import { ClearAssessmentSession } from '@/components/ClearAssessmentSession'
 import { TrackEvent } from '@/components/TrackEvent'
-import type { LeadRow, PublicResult } from '@/types'
 
 export const metadata: Metadata = {
   title: 'Your Relationship Pattern',
@@ -17,37 +16,7 @@ interface ResultPageProps {
   params: { leadId: string }
 }
 
-/**
- * Fetches only the fields the result page actually needs — never the full
- * lead row (no email/WhatsApp number reaches this page), per the app's
- * privacy requirements. Uses the service-role client since `leads` has no
- * public RLS policies; a not-found/incomplete lead renders the same
- * generic "not found" state as an invalid id, so this endpoint doesn't leak
- * which ids exist.
- */
-async function getPublicResult(leadId: string): Promise<PublicResult | null> {
-  // Reject anything that isn't a well-formed UUID before it reaches the
-  // database — cheap, and avoids a pointless query for junk input.
-  const uuidPattern = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
-  if (!uuidPattern.test(leadId)) return null
-
-  const supabase = createAdminClient()
-  const { data, error } = await supabase
-    .from('leads')
-    .select('name, primary_pattern, secondary_pattern, assessment_completed')
-    .eq('id', leadId)
-    .maybeSingle<Pick<LeadRow, 'name' | 'primary_pattern' | 'secondary_pattern' | 'assessment_completed'>>()
-
-  if (error || !data || !data.assessment_completed || !data.primary_pattern || !data.secondary_pattern) {
-    return null
-  }
-
-  return {
-    name: data.name,
-    primaryPattern: data.primary_pattern,
-    secondaryPattern: data.secondary_pattern,
-  }
-}
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pattern.mindurmind.org.in'
 
 export default async function ResultPage({ params }: ResultPageProps) {
   const result = await getPublicResult(params.leadId)
@@ -73,13 +42,27 @@ export default async function ResultPage({ params }: ResultPageProps) {
     )
   }
 
-  const whatsappUrl = buildWhatsAppUrl(primary.name)
+  // The PDF is generated on demand by /api/result-pdf/[leadId] (see that
+  // route) — the link below is what actually gets the result into
+  // WhatsApp, since wa.me can pre-fill message text but can't attach a file.
+  const pdfUrlEn = `${siteUrl}/api/result-pdf/${params.leadId}`
+  const pdfUrlHi = `${siteUrl}/api/result-pdf/${params.leadId}?lang=hi`
+  const whatsappUrlEn = buildWhatsAppUrl({ primaryPatternName: primary.name, pdfUrl: pdfUrlEn, language: 'en' })
+  const whatsappUrlHi = buildWhatsAppUrl({ primaryPatternName: primary.nameHi, pdfUrl: pdfUrlHi, language: 'hi' })
 
   return (
     <main className="section-space bg-cream-50">
       <ClearAssessmentSession />
       <TrackEvent event="assessment_completed" />
-      <ResultView result={result} primary={primary} secondary={secondary} whatsappUrl={whatsappUrl} />
+      <ResultView
+        result={result}
+        primary={primary}
+        secondary={secondary}
+        whatsappUrlEn={whatsappUrlEn}
+        whatsappUrlHi={whatsappUrlHi}
+        pdfUrlEn={pdfUrlEn}
+        pdfUrlHi={pdfUrlHi}
+      />
     </main>
   )
 }

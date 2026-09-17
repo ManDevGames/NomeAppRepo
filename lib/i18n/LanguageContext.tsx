@@ -19,11 +19,21 @@ const LanguageContext = createContext<LanguageContextValue | undefined>(undefine
  * switches to a stored preference in a useEffect — same hydration-safe
  * pattern as useAssessmentState's `hydrated` flag, just without needing to
  * expose the flag since a one-frame language flip isn't visually jarring.
+ *
+ * A `?lang=hi`/`?lang=en` URL param takes priority over the stored
+ * preference (and isn't persisted) — this is what lets the result PDF route
+ * (app/api/result-pdf/[leadId]/route.ts) deep-link a headless browser
+ * straight to the Hindi render of the result page.
  */
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>('en')
 
   useEffect(() => {
+    const urlLang = new URLSearchParams(window.location.search).get('lang')
+    if (urlLang === 'en' || urlLang === 'hi') {
+      setLanguage(urlLang)
+      return
+    }
     try {
       const stored = localStorage.getItem(STORAGE_KEY)
       if (stored === 'en' || stored === 'hi') setLanguage(stored)

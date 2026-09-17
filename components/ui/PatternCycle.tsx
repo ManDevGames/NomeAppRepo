@@ -27,7 +27,7 @@ export function PatternCycle({ cycle, labels, note, ariaLabel }: PatternCyclePro
           return (
             <div key={key} className="flex flex-col items-stretch xl:flex-1">
               <div
-                className={`flex h-full flex-col gap-3 rounded-2xl border p-6 shadow-soft transition-shadow duration-200 hover:shadow-card ${
+                className={`flex h-full flex-col gap-3 rounded-2xl border p-6 shadow-soft transition-shadow duration-200 hover:shadow-card print:break-inside-avoid ${
                   isLast ? 'border-rose-200 bg-rose-50' : 'border-charcoal-100 bg-cream-50'
                 }`}
               >

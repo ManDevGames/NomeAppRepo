@@ -14,17 +14,30 @@ interface ResultViewProps {
   result: PublicResult
   primary: Pattern
   secondary: Pattern
-  whatsappUrl: string
+  whatsappUrlEn: string
+  whatsappUrlHi: string
+  pdfUrlEn: string
+  pdfUrlHi: string
 }
 
-export function ResultView({ result, primary, secondary, whatsappUrl }: ResultViewProps) {
+export function ResultView({
+  result,
+  primary,
+  secondary,
+  whatsappUrlEn,
+  whatsappUrlHi,
+  pdfUrlEn,
+  pdfUrlHi,
+}: ResultViewProps) {
   const { language } = useLanguage()
   const copy = uiText[language].result
   const isHi = language === 'hi'
+  const whatsappUrl = isHi ? whatsappUrlHi : whatsappUrlEn
+  const pdfUrl = isHi ? pdfUrlHi : pdfUrlEn
 
   return (
     <div className="container-app flex flex-col gap-14">
-      <div className="mx-auto flex w-full max-w-3xl justify-end gap-3">
+      <div className="mx-auto flex w-full max-w-3xl justify-end gap-3 print:hidden">
         <LanguageToggle />
         <ThemeToggle />
       </div>
@@ -54,7 +67,7 @@ export function ResultView({ result, primary, secondary, whatsappUrl }: ResultVi
           <h2 className="text-xl sm:text-2xl font-semibold text-charcoal-900">{copy.experienceTitle}</h2>
           <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {(isHi ? primary.experiencePointsHi : primary.experiencePoints).map((point) => (
-              <div key={point} className="rounded-2xl border border-charcoal-100 bg-cream-50 p-4 shadow-soft">
+              <div key={point} className="rounded-2xl border border-charcoal-100 bg-cream-50 p-4 shadow-soft print:break-inside-avoid">
                 <p className="text-sm leading-relaxed text-charcoal-700">{point}</p>
               </div>
             ))}
@@ -91,11 +104,14 @@ export function ResultView({ result, primary, secondary, whatsappUrl }: ResultVi
           {copy.disclaimer}
         </p>
 
-        <section className="rounded-3xl border border-charcoal-100 bg-blush-50 p-7 sm:p-10 text-center">
+        <section className="rounded-3xl border border-charcoal-100 bg-blush-50 p-7 sm:p-10 text-center print:hidden">
           <h2 className="text-xl sm:text-2xl font-semibold text-charcoal-900">{copy.ctaTitle}</h2>
           <p className="mx-auto mt-3 max-w-md text-sm sm:text-base leading-relaxed text-charcoal-600">{copy.ctaBody}</p>
-          <div className="mt-7">
+          <div className="mt-7 flex flex-col items-center gap-3">
             <WhatsAppCTA href={whatsappUrl} label={copy.whatsappLabel} />
+            <a href={pdfUrl} target="_blank" rel="noreferrer" className="text-sm font-medium text-rose-500 underline underline-offset-2 hover:text-rose-600">
+              {copy.downloadPdfLabel}
+            </a>
           </div>
         </section>
       </div>

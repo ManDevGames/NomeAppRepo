@@ -53,6 +53,7 @@ interface ResultCopy {
   ctaTitle: string
   ctaBody: string
   whatsappLabel: string
+  downloadPdfLabel: string
   notFoundTitle: string
   notFoundBody: string
   retakeLabel: string
@@ -145,6 +146,7 @@ export const uiText: Record<Language, UiCopy> = {
       ctaBody:
         'You can connect with us directly on WhatsApp to talk through your result and explore it further — no pressure, just a conversation.',
       whatsappLabel: 'Talk About My Result on WhatsApp',
+      downloadPdfLabel: 'Download my result as a PDF',
       notFoundTitle: 'We couldn’t find that result',
       notFoundBody: 'This link may have expired or the assessment wasn’t completed. You’re welcome to take it again.',
       retakeLabel: 'Retake the Assessment',
@@ -230,6 +232,7 @@ export const uiText: Record<Language, UiCopy> = {
       ctaBody:
         'आप अपने परिणाम पर बात करने और इसे और समझने के लिए सीधे व्हाट्सएप पर हमसे जुड़ सकते/सकती हैं — कोई दबाव नहीं, बस एक बातचीत।',
       whatsappLabel: 'व्हाट्सएप पर अपने परिणाम पर बात करें',
+      downloadPdfLabel: 'अपना परिणाम PDF के रूप में डाउनलोड करें',
       notFoundTitle: 'हमें वह परिणाम नहीं मिला',
       notFoundBody: 'यह लिंक शायद समाप्त हो गया हो या आकलन पूरा नहीं हुआ हो। आप इसे दोबारा ले सकते/सकती हैं।',
       retakeLabel: 'आकलन फिर से लें',

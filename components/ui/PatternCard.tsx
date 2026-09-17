@@ -15,8 +15,8 @@ export function PatternCard({ pattern, name, shortDescription, label, variant = 
     <div
       className={
         isPrimary
-          ? 'rounded-3xl border border-rose-200 bg-rose-50 p-7 sm:p-10'
-          : 'rounded-3xl border border-charcoal-100 bg-cream-50 p-6 sm:p-8'
+          ? 'rounded-3xl border border-rose-200 bg-rose-50 p-7 sm:p-10 print:break-inside-avoid'
+          : 'rounded-3xl border border-charcoal-100 bg-cream-50 p-6 sm:p-8 print:break-inside-avoid'
       }
     >
       <span className="eyebrow">{label}</span>
