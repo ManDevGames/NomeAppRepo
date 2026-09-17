@@ -3,9 +3,12 @@
 import { useRouter } from 'next/navigation'
 import { QuestionCard } from '@/components/assessment/QuestionCard'
 import { useAssessmentState } from '@/hooks/useAssessmentState'
+import { useLanguage } from '@/lib/i18n/LanguageContext'
+import { uiText } from '@/lib/i18n/translations'
 
 export default function AssessmentPage() {
   const router = useRouter()
+  const { language } = useLanguage()
   const {
     hydrated,
     currentQuestion,
@@ -31,7 +34,7 @@ export default function AssessmentPage() {
       <div className="container-app max-w-2xl">
         {!hydrated || !currentQuestion ? (
           <div className="rounded-3xl border border-charcoal-100 bg-cream-50 p-10 text-center text-sm text-charcoal-400 shadow-card">
-            Loading your assessment…
+            {uiText[language].question.loading}
           </div>
         ) : (
           <QuestionCard

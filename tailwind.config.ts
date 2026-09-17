@@ -1,43 +1,52 @@
 import type { Config } from 'tailwindcss'
 
+function withOpacity(cssVar: string) {
+  return `rgb(var(${cssVar}) / <alpha-value>)`
+}
+
 const config: Config = {
+  darkMode: 'class',
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
+        // Each shade is bound to a CSS variable (see app/globals.css) rather
+        // than a fixed hex value, so `.dark` on <html> can swap the entire
+        // palette to its dark-mode equivalent without touching every
+        // component that uses these utility classes.
         cream: {
-          50: '#fdfbf7',
-          100: '#faf6ee',
-          200: '#f5ecdd',
+          50: withOpacity('--color-cream-50'),
+          100: withOpacity('--color-cream-100'),
+          200: withOpacity('--color-cream-200'),
         },
         blush: {
-          50: '#fdf5f4',
-          100: '#faeae7',
-          200: '#f3d6d1',
+          50: withOpacity('--color-blush-50'),
+          100: withOpacity('--color-blush-100'),
+          200: withOpacity('--color-blush-200'),
         },
         rose: {
-          50: '#faf1ee',
-          100: '#f2ddd6',
-          200: '#e3bcb1',
-          300: '#cf9587',
-          400: '#b8756a',
-          500: '#9c5c52',
+          50: withOpacity('--color-rose-50'),
+          100: withOpacity('--color-rose-100'),
+          200: withOpacity('--color-rose-200'),
+          300: withOpacity('--color-rose-300'),
+          400: withOpacity('--color-rose-400'),
+          500: withOpacity('--color-rose-500'),
         },
         sage: {
-          50: '#f4f6f2',
-          100: '#e6ebe1',
-          200: '#cdd8c3',
-          400: '#8ba57c',
-          500: '#6f8a5f',
+          50: withOpacity('--color-sage-50'),
+          100: withOpacity('--color-sage-100'),
+          200: withOpacity('--color-sage-200'),
+          400: withOpacity('--color-sage-400'),
+          500: withOpacity('--color-sage-500'),
         },
         charcoal: {
-          50: '#f7f6f5',
-          100: '#e9e6e2',
-          300: '#a89f96',
-          500: '#6b6259',
-          700: '#453f39',
-          800: '#332e29',
-          900: '#241f1c',
+          50: withOpacity('--color-charcoal-50'),
+          100: withOpacity('--color-charcoal-100'),
+          300: withOpacity('--color-charcoal-300'),
+          500: withOpacity('--color-charcoal-500'),
+          700: withOpacity('--color-charcoal-700'),
+          800: withOpacity('--color-charcoal-800'),
+          900: withOpacity('--color-charcoal-900'),
         },
       },
       fontFamily: {

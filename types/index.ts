@@ -23,12 +23,16 @@ export const PATTERN_ORDER: PatternId[] = [
 export interface QuestionOption {
   key: string
   text: string
+  /** Hindi/Hinglish translation of `text`, shown when the language toggle is set to Hindi. */
+  textHi: string
   scores: Partial<Record<PatternId, number>>
 }
 
 export interface Question {
   id: string
   text: string
+  /** Hindi/Hinglish translation of `text`, shown when the language toggle is set to Hindi. */
+  textHi: string
   options: QuestionOption[]
 }
 

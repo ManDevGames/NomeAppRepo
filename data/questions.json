@@ -6,225 +6,247 @@
   "questions": [
     {
       "id": "q1",
-      "text": "जब आपका partner अचानक कम attention देता है, तो आपकी पहली reaction क्या होती है?",
+      "text": "When your partner suddenly gives you less attention, what's your first reaction?",
+      "textHi": "जब आपका partner अचानक कम attention देता है, तो आपकी पहली reaction क्या होती है?",
       "options": [
-        { "key": "A", "text": "मैं overthink करने लगता/लगती हूं", "scores": { "overthinking": 3, "abandonment": 1 } },
-        { "key": "B", "text": "मुझे डर लगता है कि वे दूर जा रहे हैं", "scores": { "abandonment": 3 } },
-        { "key": "C", "text": "मुझे गुस्सा आता है", "scores": { "trustProtection": 2, "peoplePleasing": 1 } },
-        { "key": "D", "text": "मैं भी emotionally दूर हो जाता/जाती हूं", "scores": { "trustProtection": 3 } },
-        { "key": "E", "text": "मैं इसे सामान्य रूप से लेता/लेती हूं", "scores": { "abandonment": 0 } }
+        { "key": "A", "text": "I start to overthink", "textHi": "मैं overthink करने लगता/लगती हूं", "scores": { "overthinking": 3, "abandonment": 1 } },
+        { "key": "B", "text": "I feel afraid they're pulling away", "textHi": "मुझे डर लगता है कि वे दूर जा रहे हैं", "scores": { "abandonment": 3 } },
+        { "key": "C", "text": "I feel angry", "textHi": "मुझे गुस्सा आता है", "scores": { "trustProtection": 2, "peoplePleasing": 1 } },
+        { "key": "D", "text": "I also become emotionally distant", "textHi": "मैं भी emotionally दूर हो जाता/जाती हूं", "scores": { "trustProtection": 3 } },
+        { "key": "E", "text": "I take it in stride", "textHi": "मैं इसे सामान्य रूप से लेता/लेती हूं", "scores": { "abandonment": 0 } }
       ]
     },
     {
       "id": "q2",
       "text": "During a disagreement, what feels most natural to you?",
+      "textHi": "किसी disagreement के दौरान, आपके लिए सबसे natural क्या लगता है?",
       "options": [
-        { "key": "A", "text": "Trying to smooth things over as quickly as possible", "scores": { "peoplePleasing": 3 } },
-        { "key": "B", "text": "Needing reassurance that we're still okay", "scores": { "abandonment": 3 } },
-        { "key": "C", "text": "Replaying the conversation afterward, analysing every word", "scores": { "overthinking": 3 } },
-        { "key": "D", "text": "Wanting to step back and create some distance", "scores": { "trustProtection": 3 } },
-        { "key": "E", "text": "Saying how I feel directly, even if it's uncomfortable", "scores": { "selfWorth": 1 } }
+        { "key": "A", "text": "Trying to smooth things over as quickly as possible", "textHi": "जितनी जल्दी हो सके चीज़ों को सुलझाने की कोशिश करना", "scores": { "peoplePleasing": 3 } },
+        { "key": "B", "text": "Needing reassurance that we're still okay", "textHi": "यह आश्वासन चाहिए होना कि हम अभी भी ठीक हैं", "scores": { "abandonment": 3 } },
+        { "key": "C", "text": "Replaying the conversation afterward, analysing every word", "textHi": "बाद में बातचीत को बार-बार सोचना, हर शब्द को analyse करना", "scores": { "overthinking": 3 } },
+        { "key": "D", "text": "Wanting to step back and create some distance", "textHi": "पीछे हटने और थोड़ी दूरी बनाने का मन करना", "scores": { "trustProtection": 3 } },
+        { "key": "E", "text": "Saying how I feel directly, even if it's uncomfortable", "textHi": "सीधे अपनी feelings बताना, भले ही असहज लगे", "scores": { "selfWorth": 1 } }
       ]
     },
     {
       "id": "q3",
       "text": "How comfortable are you expressing your emotional needs to someone close to you?",
+      "textHi": "आप किसी करीबी इंसान से अपनी emotional needs बताने में कितना सहज महसूस करते/करती हैं?",
       "options": [
-        { "key": "A", "text": "मुझे लगता है मैं बोझ बन जाऊंगा/जाऊंगी, इसलिए नहीं बोलता/बोलती", "scores": { "peoplePleasing": 3, "selfWorth": 1 } },
-        { "key": "B", "text": "मैं बोल तो देता/देती हूं, पर बाद में reaction को लेकर सोचता/सोचती रहता/रहती हूं", "scores": { "overthinking": 2, "abandonment": 1 } },
-        { "key": "C", "text": "मैं ज्यादातर अपनी बात अपने तक रखता/रखती हूं", "scores": { "trustProtection": 3 } },
-        { "key": "D", "text": "काफी सहज हूं, हालांकि कभी-कभी मुश्किल लगता है", "scores": { "selfWorth": 0 } }
+        { "key": "A", "text": "I feel like I'll become a burden, so I don't say anything", "textHi": "मुझे लगता है मैं बोझ बन जाऊंगा/जाऊंगी, इसलिए नहीं बोलता/बोलती", "scores": { "peoplePleasing": 3, "selfWorth": 1 } },
+        { "key": "B", "text": "I do say it, but afterward I keep thinking about their reaction", "textHi": "मैं बोल तो देता/देती हूं, पर बाद में reaction को लेकर सोचता/सोचती रहता/रहती हूं", "scores": { "overthinking": 2, "abandonment": 1 } },
+        { "key": "C", "text": "I mostly keep it to myself", "textHi": "मैं ज्यादातर अपनी बात अपने तक रखता/रखती हूं", "scores": { "trustProtection": 3 } },
+        { "key": "D", "text": "Fairly comfortable, though it feels hard sometimes", "textHi": "काफी सहज हूं, हालांकि कभी-कभी मुश्किल लगता है", "scores": { "selfWorth": 0 } }
       ]
     },
     {
       "id": "q4",
       "text": "When you feel rejected by someone you care about, what usually happens?",
+      "textHi": "जब आपको लगता है कि किसी करीबी ने आपको reject किया है, तो आमतौर पर क्या होता है?",
       "options": [
-        { "key": "A", "text": "I replay it repeatedly, looking for what went wrong", "scores": { "overthinking": 3 } },
-        { "key": "B", "text": "I try to fix whatever I think I did", "scores": { "peoplePleasing": 2, "selfWorth": 1 } },
-        { "key": "C", "text": "I start doubting my own worth", "scores": { "selfWorth": 3 } },
-        { "key": "D", "text": "I create distance before I can be hurt further", "scores": { "trustProtection": 3 } },
-        { "key": "E", "text": "I feel a sharp fear that they'll leave altogether", "scores": { "abandonment": 3 } }
+        { "key": "A", "text": "I replay it repeatedly, looking for what went wrong", "textHi": "मैं बार-बार उसे सोचता/सोचती रहता/रहती हूं कि क्या गलत हुआ", "scores": { "overthinking": 3 } },
+        { "key": "B", "text": "I try to fix whatever I think I did", "textHi": "मुझे जो भी गलती लगती है, उसे ठीक करने की कोशिश करता/करती हूं", "scores": { "peoplePleasing": 2, "selfWorth": 1 } },
+        { "key": "C", "text": "I start doubting my own worth", "textHi": "मुझे अपनी worth पर शक होने लगता है", "scores": { "selfWorth": 3 } },
+        { "key": "D", "text": "I create distance before I can be hurt further", "textHi": "और दुख होने से पहले ही मैं दूरी बना लेता/लेती हूं", "scores": { "trustProtection": 3 } },
+        { "key": "E", "text": "I feel a sharp fear that they'll leave altogether", "textHi": "मुझे तेज़ डर लगता है कि वे हमेशा के लिए चले जाएंगे", "scores": { "abandonment": 3 } }
       ]
     },
     {
       "id": "q5",
-      "text": "किसी करीबी इंसान के अचानक space मांगने पर आपकी पहली internal reaction क्या होती है?",
+      "text": "When someone close to you suddenly asks for space, what's your first internal reaction?",
+      "textHi": "किसी करीबी इंसान के अचानक space मांगने पर आपकी पहली internal reaction क्या होती है?",
       "options": [
-        { "key": "A", "text": "घबराहट - मुझसे क्या गलती हो गई?", "scores": { "abandonment": 3 } },
-        { "key": "B", "text": "मन में बार-बार वजह सोचना", "scores": { "overthinking": 3 } },
-        { "key": "C", "text": "राहत, मुझे भी space चाहिए थी", "scores": { "trustProtection": 2 } },
-        { "key": "D", "text": "मैं respect करता/करती हूं, पर बाद में check-in करता/करती हूं", "scores": { "selfWorth": 0 } }
+        { "key": "A", "text": "Panic — what did I do wrong?", "textHi": "घबराहट - मुझसे क्या गलती हो गई?", "scores": { "abandonment": 3 } },
+        { "key": "B", "text": "Repeatedly thinking about the reason", "textHi": "मन में बार-बार वजह सोचना", "scores": { "overthinking": 3 } },
+        { "key": "C", "text": "Relief — I needed space too", "textHi": "राहत, मुझे भी space चाहिए थी", "scores": { "trustProtection": 2 } },
+        { "key": "D", "text": "I respect it, but check in afterward", "textHi": "मैं respect करता/करती हूं, पर बाद में check-in करता/करती हूं", "scores": { "selfWorth": 0 } }
       ]
     },
     {
       "id": "q6",
       "text": "Which statement feels closest to how your relationships usually go?",
+      "textHi": "कौन सा statement आपके रिश्तों के usual pattern के सबसे करीब लगता है?",
       "options": [
-        { "key": "A", "text": "I give more than I receive, and rarely ask for more", "scores": { "peoplePleasing": 3 } },
-        { "key": "B", "text": "I need fairly frequent reassurance that things are okay", "scores": { "abandonment": 3 } },
-        { "key": "C", "text": "I keep part of myself guarded, just in case", "scores": { "trustProtection": 3 } },
-        { "key": "D", "text": "The same kind of problem tends to show up, with different people", "scores": { "repeatingPattern": 3 } }
+        { "key": "A", "text": "I give more than I receive, and rarely ask for more", "textHi": "मैं जितना पाता/पाती हूं उससे ज्यादा देता/देती हूं, और कम ही मांगता/मांगती हूं", "scores": { "peoplePleasing": 3 } },
+        { "key": "B", "text": "I need fairly frequent reassurance that things are okay", "textHi": "मुझे काफी बार यह आश्वासन चाहिए होता है कि सब ठीक है", "scores": { "abandonment": 3 } },
+        { "key": "C", "text": "I keep part of myself guarded, just in case", "textHi": "मैं अपने एक हिस्से को हमेशा guarded रखता/रखती हूं, just in case", "scores": { "trustProtection": 3 } },
+        { "key": "D", "text": "The same kind of problem tends to show up, with different people", "textHi": "अलग-अलग लोगों के साथ भी वही तरह की problem बार-बार सामने आती है", "scores": { "repeatingPattern": 3 } }
       ]
     },
     {
       "id": "q7",
-      "text": "जब कोई message का जवाब देर से आता है, तो आपके मन में क्या चलता है?",
+      "text": "When someone replies to your message late, what goes through your mind?",
+      "textHi": "जब कोई message का जवाब देर से आता है, तो आपके मन में क्या चलता है?",
       "options": [
-        { "key": "A", "text": "इसका मतलब क्या है, यह सोचता/सोचती रहता/रहती हूं", "scores": { "overthinking": 3 } },
-        { "key": "B", "text": "शायद वे मुझसे नाराज़ हैं या दूर जा रहे हैं", "scores": { "abandonment": 2, "selfWorth": 1 } },
-        { "key": "C", "text": "कोई खास फर्क नहीं पड़ता", "scores": { "overthinking": 0 } },
-        { "key": "D", "text": "मैं खुद को busy रखने की कोशिश करता/करती हूं ताकि ध्यान न जाए", "scores": { "trustProtection": 2 } }
+        { "key": "A", "text": "I keep wondering what it means", "textHi": "इसका मतलब क्या है, यह सोचता/सोचती रहता/रहती हूं", "scores": { "overthinking": 3 } },
+        { "key": "B", "text": "Maybe they're upset with me or pulling away", "textHi": "शायद वे मुझसे नाराज़ हैं या दूर जा रहे हैं", "scores": { "abandonment": 2, "selfWorth": 1 } },
+        { "key": "C", "text": "It doesn't really matter to me", "textHi": "कोई खास फर्क नहीं पड़ता", "scores": { "overthinking": 0 } },
+        { "key": "D", "text": "I try to keep myself busy so I don't dwell on it", "textHi": "मैं खुद को busy रखने की कोशिश करता/करती हूं ताकि ध्यान न जाए", "scores": { "trustProtection": 2 } }
       ]
     },
     {
       "id": "q8",
       "text": "How do you usually respond to criticism from someone close to you, even if it's gentle?",
+      "textHi": "किसी करीबी इंसान की criticism पर आप usually कैसे react करते/करती हैं, भले ही वो gentle हो?",
       "options": [
-        { "key": "A", "text": "It stays with me for a long time, and I question myself", "scores": { "selfWorth": 3 } },
-        { "key": "B", "text": "I immediately try to correct it and make things right", "scores": { "peoplePleasing": 3 } },
-        { "key": "C", "text": "I become guarded and less likely to open up again", "scores": { "trustProtection": 3 } },
-        { "key": "D", "text": "I take it in, sit with it, and respond when I'm ready", "scores": { "selfWorth": 0 } }
+        { "key": "A", "text": "It stays with me for a long time, and I question myself", "textHi": "यह मेरे मन में लंबे समय तक रहता है, और मैं खुद पर शक करने लगता/लगती हूं", "scores": { "selfWorth": 3 } },
+        { "key": "B", "text": "I immediately try to correct it and make things right", "textHi": "मैं तुरंत उसे ठीक करने और चीज़ों को सही करने की कोशिश करता/करती हूं", "scores": { "peoplePleasing": 3 } },
+        { "key": "C", "text": "I become guarded and less likely to open up again", "textHi": "मैं guarded हो जाता/जाती हूं और दोबारा खुलने से बचता/बचती हूं", "scores": { "trustProtection": 3 } },
+        { "key": "D", "text": "I take it in, sit with it, and respond when I'm ready", "textHi": "मैं उसे समझता/समझती हूं, थोड़ा समय लेता/लेती हूं, और तैयार होने पर जवाब देता/देती हूं", "scores": { "selfWorth": 0 } }
       ]
     },
     {
       "id": "q9",
-      "text": "क्या आप खुद की तुलना अक्सर उन लोगों से करते/करती हैं जो आपके करीबी इंसान के जीवन में हैं?",
+      "text": "Do you often compare yourself to other people in your close one's life?",
+      "textHi": "क्या आप खुद की तुलना अक्सर उन लोगों से करते/करती हैं जो आपके करीबी इंसान के जीवन में हैं?",
       "options": [
-        { "key": "A", "text": "हां, अक्सर - और मन में असुरक्षा महसूस होती है", "scores": { "selfWorth": 3 } },
-        { "key": "B", "text": "कभी-कभी, खासकर तनाव के समय", "scores": { "selfWorth": 2, "abandonment": 1 } },
-        { "key": "C", "text": "शायद ही कभी", "scores": { "selfWorth": 0 } },
-        { "key": "D", "text": "मैं इसकी बजाय दूरी बना लेता/लेती हूं", "scores": { "trustProtection": 2 } }
+        { "key": "A", "text": "Yes, often — and it makes me feel insecure", "textHi": "हां, अक्सर - और मन में असुरक्षा महसूस होती है", "scores": { "selfWorth": 3 } },
+        { "key": "B", "text": "Sometimes, especially during stressful times", "textHi": "कभी-कभी, खासकर तनाव के समय", "scores": { "selfWorth": 2, "abandonment": 1 } },
+        { "key": "C", "text": "Rarely", "textHi": "शायद ही कभी", "scores": { "selfWorth": 0 } },
+        { "key": "D", "text": "I create distance instead", "textHi": "मैं इसकी बजाय दूरी बना लेता/लेती हूं", "scores": { "trustProtection": 2 } }
       ]
     },
     {
       "id": "q10",
       "text": "When a new relationship starts to feel genuinely close, what do you notice in yourself?",
+      "textHi": "जब कोई नया रिश्ता वाकई करीबी लगने लगता है, तो आप अपने अंदर क्या notice करते/करती हैं?",
       "options": [
-        { "key": "A", "text": "Excitement, mixed with a growing worry about when it might end", "scores": { "abandonment": 3 } },
-        { "key": "B", "text": "An urge to pull back or create some distance", "scores": { "trustProtection": 3 } },
-        { "key": "C", "text": "A familiar feeling, like I've been here before", "scores": { "repeatingPattern": 3 } },
-        { "key": "D", "text": "I start trying harder to be exactly what they need", "scores": { "peoplePleasing": 2, "selfWorth": 1 } }
+        { "key": "A", "text": "Excitement, mixed with a growing worry about when it might end", "textHi": "उत्साह, साथ ही यह बढ़ती चिंता कि यह कब खत्म हो सकता है", "scores": { "abandonment": 3 } },
+        { "key": "B", "text": "An urge to pull back or create some distance", "textHi": "पीछे हटने या थोड़ी दूरी बनाने की इच्छा", "scores": { "trustProtection": 3 } },
+        { "key": "C", "text": "A familiar feeling, like I've been here before", "textHi": "एक जानी-पहचानी feeling, जैसे मैं यहां पहले भी रहा/रही हूं", "scores": { "repeatingPattern": 3 } },
+        { "key": "D", "text": "I start trying harder to be exactly what they need", "textHi": "मैं ज्यादा कोशिश करने लगता/लगती हूं कि वो exactly बनूं जो उन्हें चाहिए", "scores": { "peoplePleasing": 2, "selfWorth": 1 } }
       ]
     },
     {
       "id": "q11",
-      "text": "आपके लिए किसी को 'ना' कहना कैसा होता है?",
+      "text": "What's it like for you to say 'no' to someone?",
+      "textHi": "आपके लिए किसी को 'ना' कहना कैसा होता है?",
       "options": [
-        { "key": "A", "text": "बहुत मुश्किल, मुझे guilt होता है", "scores": { "peoplePleasing": 3 } },
-        { "key": "B", "text": "मैं ना कहने के बाद भी सोचता/सोचती रहता/रहती हूं कि उन्हें कैसा लगा होगा", "scores": { "overthinking": 2, "peoplePleasing": 1 } },
-        { "key": "C", "text": "ठीक है, पर फिर रिश्ते में थोड़ी दूरी महसूस होती है", "scores": { "trustProtection": 2 } },
-        { "key": "D", "text": "सामान्य है, मैं अपनी बात साफ रख पाता/पाती हूं", "scores": { "peoplePleasing": 0 } }
+        { "key": "A", "text": "Very hard — I feel guilty", "textHi": "बहुत मुश्किल, मुझे guilt होता है", "scores": { "peoplePleasing": 3 } },
+        { "key": "B", "text": "Even after saying no, I keep thinking about how they must have felt", "textHi": "मैं ना कहने के बाद भी सोचता/सोचती रहता/रहती हूं कि उन्हें कैसा लगा होगा", "scores": { "overthinking": 2, "peoplePleasing": 1 } },
+        { "key": "C", "text": "It's okay, but I then feel a bit of distance in the relationship", "textHi": "ठीक है, पर फिर रिश्ते में थोड़ी दूरी महसूस होती है", "scores": { "trustProtection": 2 } },
+        { "key": "D", "text": "It feels normal — I'm able to be clear about it", "textHi": "सामान्य है, मैं अपनी बात साफ रख पाता/पाती हूं", "scores": { "peoplePleasing": 0 } }
       ]
     },
     {
       "id": "q12",
       "text": "How much do you feel responsible for other people's moods in your relationships?",
+      "textHi": "अपने रिश्तों में आप दूसरों के mood के लिए कितना responsible महसूस करते/करती हैं?",
       "options": [
-        { "key": "A", "text": "A lot — if they're upset, I feel like I need to fix it", "scores": { "peoplePleasing": 3 } },
-        { "key": "B", "text": "I notice it and it stays on my mind for a while", "scores": { "overthinking": 2, "peoplePleasing": 1 } },
-        { "key": "C", "text": "I keep a bit of distance so it doesn't affect me as much", "scores": { "trustProtection": 2 } },
-        { "key": "D", "text": "I care, but I know it's not always mine to fix", "scores": { "peoplePleasing": 0 } }
+        { "key": "A", "text": "A lot — if they're upset, I feel like I need to fix it", "textHi": "बहुत ज्यादा — अगर वे upset हैं, तो मुझे लगता है मुझे इसे ठीक करना है", "scores": { "peoplePleasing": 3 } },
+        { "key": "B", "text": "I notice it and it stays on my mind for a while", "textHi": "मुझे पता चलता है और यह कुछ समय तक मेरे मन में रहता है", "scores": { "overthinking": 2, "peoplePleasing": 1 } },
+        { "key": "C", "text": "I keep a bit of distance so it doesn't affect me as much", "textHi": "मैं थोड़ी दूरी बनाए रखता/रखती हूं ताकि इसका मुझ पर ज्यादा असर न हो", "scores": { "trustProtection": 2 } },
+        { "key": "D", "text": "I care, but I know it's not always mine to fix", "textHi": "मुझे फर्क पड़ता है, पर मुझे पता है कि इसे ठीक करना हमेशा मेरी जिम्मेदारी नहीं है", "scores": { "peoplePleasing": 0 } }
       ]
     },
     {
       "id": "q13",
       "text": "After a disagreement is resolved on the surface, what actually happens for you?",
+      "textHi": "जब कोई disagreement ऊपर-ऊपर से सुलझ जाता है, तो अंदर से आपके साथ असल में क्या होता है?",
       "options": [
-        { "key": "A", "text": "I keep replaying it to make sure it's really okay", "scores": { "overthinking": 3 } },
-        { "key": "B", "text": "I still feel a lingering fear that something changed between us", "scores": { "abandonment": 3 } },
-        { "key": "C", "text": "I feel a bit more guarded than before", "scores": { "trustProtection": 2 } },
-        { "key": "D", "text": "I genuinely move on and feel okay", "scores": { "overthinking": 0 } }
+        { "key": "A", "text": "I keep replaying it to make sure it's really okay", "textHi": "मैं इसे बार-बार सोचता/सोचती हूं ताकि यकीन हो जाए कि सच में सब ठीक है", "scores": { "overthinking": 3 } },
+        { "key": "B", "text": "I still feel a lingering fear that something changed between us", "textHi": "फिर भी मन में यह डर बना रहता है कि हमारे बीच कुछ बदल गया", "scores": { "abandonment": 3 } },
+        { "key": "C", "text": "I feel a bit more guarded than before", "textHi": "मैं पहले से थोड़ा ज्यादा guarded महसूस करता/करती हूं", "scores": { "trustProtection": 2 } },
+        { "key": "D", "text": "I genuinely move on and feel okay", "textHi": "मैं वाकई आगे बढ़ पाता/पाती हूं और ठीक महसूस करता/करती हूं", "scores": { "overthinking": 0 } }
       ]
     },
     {
       "id": "q14",
-      "text": "क्या आपको ऐसा लगता है कि अलग-अलग रिश्तों में भी वही समस्या बार-बार आती है?",
+      "text": "Does it feel like the same problem keeps showing up across different relationships?",
+      "textHi": "क्या आपको ऐसा लगता है कि अलग-अलग रिश्तों में भी वही समस्या बार-बार आती है?",
       "options": [
-        { "key": "A", "text": "हां, बिल्कुल - मुझे पैटर्न साफ दिखता है", "scores": { "repeatingPattern": 3 } },
-        { "key": "B", "text": "कुछ हद तक, पर पूरी तरह समझ नहीं पाता/पाती", "scores": { "repeatingPattern": 2 } },
-        { "key": "C", "text": "शायद, पर मैं इसे किस्मत मान लेता/लेती हूं", "scores": { "repeatingPattern": 1, "selfWorth": 1 } },
-        { "key": "D", "text": "नहीं, हर रिश्ता अलग रहा है", "scores": { "repeatingPattern": 0 } }
+        { "key": "A", "text": "Yes, definitely — I can clearly see the pattern", "textHi": "हां, बिल्कुल - मुझे पैटर्न साफ दिखता है", "scores": { "repeatingPattern": 3 } },
+        { "key": "B", "text": "To some extent, but I don't fully understand it", "textHi": "कुछ हद तक, पर पूरी तरह समझ नहीं पाता/पाती", "scores": { "repeatingPattern": 2 } },
+        { "key": "C", "text": "Maybe, but I chalk it up to bad luck", "textHi": "शायद, पर मैं इसे किस्मत मान लेता/लेती हूं", "scores": { "repeatingPattern": 1, "selfWorth": 1 } },
+        { "key": "D", "text": "No, every relationship has been different", "textHi": "नहीं, हर रिश्ता अलग रहा है", "scores": { "repeatingPattern": 0 } }
       ]
     },
     {
       "id": "q15",
       "text": "When someone compliments you or expresses appreciation, how does it usually land?",
+      "textHi": "जब कोई आपकी तारीफ करता है या appreciation दिखाता है, तो usually आपको कैसा लगता है?",
       "options": [
-        { "key": "A", "text": "I find it hard to fully believe or accept it", "scores": { "selfWorth": 3 } },
-        { "key": "B", "text": "I immediately wonder what they want in return", "scores": { "trustProtection": 3 } },
-        { "key": "C", "text": "I brush past it quickly and move the focus elsewhere", "scores": { "peoplePleasing": 2 } },
-        { "key": "D", "text": "I'm able to take it in and appreciate it", "scores": { "selfWorth": 0 } }
+        { "key": "A", "text": "I find it hard to fully believe or accept it", "textHi": "मुझे इसे पूरी तरह मानना या स्वीकार करना मुश्किल लगता है", "scores": { "selfWorth": 3 } },
+        { "key": "B", "text": "I immediately wonder what they want in return", "textHi": "मैं तुरंत सोचने लगता/लगती हूं कि वे बदले में क्या चाहते हैं", "scores": { "trustProtection": 3 } },
+        { "key": "C", "text": "I brush past it quickly and move the focus elsewhere", "textHi": "मैं उसे जल्दी से टाल देता/देती हूं और ध्यान कहीं और ले जाता/जाती हूं", "scores": { "peoplePleasing": 2 } },
+        { "key": "D", "text": "I'm able to take it in and appreciate it", "textHi": "मैं उसे सच में महसूस कर पाता/पाती हूं और appreciate कर पाता/पाती हूं", "scores": { "selfWorth": 0 } }
       ]
     },
     {
       "id": "q16",
-      "text": "जब कोई करीबी इंसान अपनी कोई कमजोरी या डर आपसे share करता है, तो आप कैसा महसूस करते/करती हैं?",
+      "text": "When someone close to you shares a vulnerability or fear with you, how do you feel?",
+      "textHi": "जब कोई करीबी इंसान अपनी कोई कमजोरी या डर आपसे share करता है, तो आप कैसा महसूस करते/करती हैं?",
       "options": [
-        { "key": "A", "text": "करीबी महसूस होती है, पर साथ ही चिंता भी कि अब क्या जिम्मेदारी है", "scores": { "peoplePleasing": 2, "overthinking": 1 } },
-        { "key": "B", "text": "मैं भी वैसा ही खुलने की कोशिश करता/करती हूं, हालांकि मुश्किल लगता है", "scores": { "trustProtection": 2 } },
-        { "key": "C", "text": "यह मुझे उनके करीब और भरोसेमंद महसूस कराता है", "scores": { "trustProtection": 0 } },
-        { "key": "D", "text": "मुझे थोड़ी दूरी बनाने का मन करता है", "scores": { "trustProtection": 3 } }
+        { "key": "A", "text": "It feels close, but also brings worry about what responsibility this brings", "textHi": "करीबी महसूस होती है, पर साथ ही चिंता भी कि अब क्या जिम्मेदारी है", "scores": { "peoplePleasing": 2, "overthinking": 1 } },
+        { "key": "B", "text": "I try to open up in the same way too, even though it feels hard", "textHi": "मैं भी वैसा ही खुलने की कोशिश करता/करती हूं, हालांकि मुश्किल लगता है", "scores": { "trustProtection": 2 } },
+        { "key": "C", "text": "It makes me feel closer to them and trusted", "textHi": "यह मुझे उनके करीब और भरोसेमंद महसूस कराता है", "scores": { "trustProtection": 0 } },
+        { "key": "D", "text": "I feel like creating a bit of distance", "textHi": "मुझे थोड़ी दूरी बनाने का मन करता है", "scores": { "trustProtection": 3 } }
       ]
     },
     {
       "id": "q17",
       "text": "How do you typically handle disagreements about plans or decisions?",
+      "textHi": "plans या decisions को लेकर disagreements को आप आमतौर पर कैसे handle करते/करती हैं?",
       "options": [
-        { "key": "A", "text": "I go along with what they want, even if I'd prefer something else", "scores": { "peoplePleasing": 3 } },
-        { "key": "B", "text": "I overthink whether raising my preference is worth the friction", "scores": { "overthinking": 2, "peoplePleasing": 1 } },
-        { "key": "C", "text": "I share my view fairly directly", "scores": { "selfWorth": 0 } },
-        { "key": "D", "text": "I tend to avoid the conversation altogether", "scores": { "trustProtection": 2 } }
+        { "key": "A", "text": "I go along with what they want, even if I'd prefer something else", "textHi": "मैं वही करता/करती हूं जो वे चाहते हैं, भले ही मुझे कुछ और पसंद हो", "scores": { "peoplePleasing": 3 } },
+        { "key": "B", "text": "I overthink whether raising my preference is worth the friction", "textHi": "मैं यह सोचता/सोचती रहता/रहती हूं कि अपनी पसंद बताना friction के लायक है भी या नहीं", "scores": { "overthinking": 2, "peoplePleasing": 1 } },
+        { "key": "C", "text": "I share my view fairly directly", "textHi": "मैं अपनी बात काफी सीधे तौर पर रखता/रखती हूं", "scores": { "selfWorth": 0 } },
+        { "key": "D", "text": "I tend to avoid the conversation altogether", "textHi": "मैं आमतौर पर पूरी बातचीत से ही बचता/बचती हूं", "scores": { "trustProtection": 2 } }
       ]
     },
     {
       "id": "q18",
-      "text": "अगर कोई दोस्त आपको आपके रिश्ते के बारे में कोई सलाह या observation दे, तो आपकी reaction क्या होती है?",
+      "text": "If a friend gives you advice or an observation about your relationship, what's your reaction?",
+      "textHi": "अगर कोई दोस्त आपको आपके रिश्ते के बारे में कोई सलाह या observation दे, तो आपकी reaction क्या होती है?",
       "options": [
-        { "key": "A", "text": "मैं तुरंत उसके बारे में गहराई से सोचने लगता/लगती हूं", "scores": { "overthinking": 3 } },
-        { "key": "B", "text": "मुझे थोड़ा defensive महसूस होता है", "scores": { "trustProtection": 2, "selfWorth": 1 } },
-        { "key": "C", "text": "मैं सोचता/सोचती हूं कि क्या मुझसे कोई गलती हुई", "scores": { "selfWorth": 2, "peoplePleasing": 1 } },
-        { "key": "D", "text": "मैं खुले मन से सुनता/सुनती हूं और अपने हिसाब से decide करता/करती हूं", "scores": { "selfWorth": 0 } }
+        { "key": "A", "text": "I immediately start overthinking it", "textHi": "मैं तुरंत उसके बारे में गहराई से सोचने लगता/लगती हूं", "scores": { "overthinking": 3 } },
+        { "key": "B", "text": "I feel a bit defensive", "textHi": "मुझे थोड़ा defensive महसूस होता है", "scores": { "trustProtection": 2, "selfWorth": 1 } },
+        { "key": "C", "text": "I start wondering if I did something wrong", "textHi": "मैं सोचता/सोचती हूं कि क्या मुझसे कोई गलती हुई", "scores": { "selfWorth": 2, "peoplePleasing": 1 } },
+        { "key": "D", "text": "I listen with an open mind and decide for myself", "textHi": "मैं खुले मन से सुनता/सुनती हूं और अपने हिसाब से decide करता/करती हूं", "scores": { "selfWorth": 0 } }
       ]
     },
     {
       "id": "q19",
       "text": "When a relationship ends, what does your self-talk tend to sound like afterward?",
+      "textHi": "जब कोई रिश्ता खत्म होता है, तो बाद में आपकी self-talk कैसी होती है?",
       "options": [
-        { "key": "A", "text": "\"I always knew this would happen eventually\"", "scores": { "abandonment": 3 } },
-        { "key": "B", "text": "\"What could I have done differently?\" on repeat", "scores": { "overthinking": 3 } },
-        { "key": "C", "text": "\"Maybe I'm just not enough for people\"", "scores": { "selfWorth": 3 } },
-        { "key": "D", "text": "\"This is the same story again, with someone new\"", "scores": { "repeatingPattern": 3 } }
+        { "key": "A", "text": "\"I always knew this would happen eventually\"", "textHi": "\"मुझे हमेशा पता था कि यह आखिरकार होगा\"", "scores": { "abandonment": 3 } },
+        { "key": "B", "text": "\"What could I have done differently?\" on repeat", "textHi": "\"मैं क्या अलग कर सकता/सकती था/थी?\" बार-बार यही सोचना", "scores": { "overthinking": 3 } },
+        { "key": "C", "text": "\"Maybe I'm just not enough for people\"", "textHi": "\"शायद मैं लोगों के लिए काफी ही नहीं हूं\"", "scores": { "selfWorth": 3 } },
+        { "key": "D", "text": "\"This is the same story again, with someone new\"", "textHi": "\"यह फिर वही कहानी है, बस किसी नए इंसान के साथ\"", "scores": { "repeatingPattern": 3 } }
       ]
     },
     {
       "id": "q20",
-      "text": "रिश्तों में आप अपनी जरूरतों को कैसे handle करते/करती हैं?",
+      "text": "How do you handle your own needs within relationships?",
+      "textHi": "रिश्तों में आप अपनी जरूरतों को कैसे handle करते/करती हैं?",
       "options": [
-        { "key": "A", "text": "मैं उन्हें सबसे बाद में रखता/रखती हूं", "scores": { "peoplePleasing": 3 } },
-        { "key": "B", "text": "मुझे खुद नहीं पता होता कि मुझे क्या चाहिए, जब तक मैं overwhelmed न हो जाऊं", "scores": { "overthinking": 2, "peoplePleasing": 1 } },
-        { "key": "C", "text": "मैं उन्हें खुद पूरा करने की कोशिश करता/करती हूं, दूसरों पर निर्भर हुए बिना", "scores": { "trustProtection": 3 } },
-        { "key": "D", "text": "मैं उन्हें बता पाता/पाती हूं, भले ही हिम्मत जुटानी पड़े", "scores": { "selfWorth": 0 } }
+        { "key": "A", "text": "I put them last", "textHi": "मैं उन्हें सबसे बाद में रखता/रखती हूं", "scores": { "peoplePleasing": 3 } },
+        { "key": "B", "text": "I don't even know what I need until I become overwhelmed", "textHi": "मुझे खुद नहीं पता होता कि मुझे क्या चाहिए, जब तक मैं overwhelmed न हो जाऊं", "scores": { "overthinking": 2, "peoplePleasing": 1 } },
+        { "key": "C", "text": "I try to meet them myself, without depending on others", "textHi": "मैं उन्हें खुद पूरा करने की कोशिश करता/करती हूं, दूसरों पर निर्भर हुए बिना", "scores": { "trustProtection": 3 } },
+        { "key": "D", "text": "I'm able to express them, even if it takes courage", "textHi": "मैं उन्हें बता पाता/पाती हूं, भले ही हिम्मत जुटानी पड़े", "scores": { "selfWorth": 0 } }
       ]
     },
     {
       "id": "q21",
       "text": "Thinking back across your relationships, which feels most true?",
+      "textHi": "अपने रिश्तों को याद करते हुए, आपको कौन सी बात सबसे सच लगती है?",
       "options": [
-        { "key": "A", "text": "I'm often the one holding the relationship together", "scores": { "peoplePleasing": 2, "selfWorth": 1 } },
-        { "key": "B", "text": "I've often ended up with people who were hard to fully trust", "scores": { "trustProtection": 2, "repeatingPattern": 1 } },
-        { "key": "C", "text": "I've often worried about being left, even when things were fine", "scores": { "abandonment": 3 } },
-        { "key": "D", "text": "Looking back, I can see a pattern repeating itself", "scores": { "repeatingPattern": 3 } }
+        { "key": "A", "text": "I'm often the one holding the relationship together", "textHi": "अक्सर मैं ही होता/होती हूं जो रिश्ते को साथ बनाए रखता/रखती हूं", "scores": { "peoplePleasing": 2, "selfWorth": 1 } },
+        { "key": "B", "text": "I've often ended up with people who were hard to fully trust", "textHi": "मैं अक्सर ऐसे लोगों के साथ रहा/रही हूं जिन पर पूरी तरह भरोसा करना मुश्किल था", "scores": { "trustProtection": 2, "repeatingPattern": 1 } },
+        { "key": "C", "text": "I've often worried about being left, even when things were fine", "textHi": "मैं अक्सर छोड़े जाने की चिंता करता/करती रहा/रही हूं, तब भी जब सब ठीक था", "scores": { "abandonment": 3 } },
+        { "key": "D", "text": "Looking back, I can see a pattern repeating itself", "textHi": "पीछे मुड़कर देखने पर, मुझे एक पैटर्न बार-बार दोहराता दिखता है", "scores": { "repeatingPattern": 3 } }
       ]
     },
     {
       "id": "q22",
-      "text": "जब सब कुछ शांत और ठीक चल रहा हो, तब आपके मन की सामान्य स्थिति क्या होती है?",
+      "text": "When everything is calm and going well, what's your usual state of mind?",
+      "textHi": "जब सब कुछ शांत और ठीक चल रहा हो, तब आपके मन की सामान्य स्थिति क्या होती है?",
       "options": [
-        { "key": "A", "text": "मैं फिर भी अगली मुश्किल के बारे में सोचने लगता/लगती हूं", "scores": { "overthinking": 2, "abandonment": 1 } },
-        { "key": "B", "text": "मैं थोड़ा सतर्क रहता/रहती हूं, ताकि अचानक धोखा न हो", "scores": { "trustProtection": 3 } },
-        { "key": "C", "text": "मुझे शांति के बीच भी अपनी worth पर शक होता है", "scores": { "selfWorth": 2 } },
-        { "key": "D", "text": "मैं वाकई शांति महसूस कर पाता/पाती हूं", "scores": { "overthinking": 0 } }
+        { "key": "A", "text": "I still start thinking about the next problem", "textHi": "मैं फिर भी अगली मुश्किल के बारे में सोचने लगता/लगती हूं", "scores": { "overthinking": 2, "abandonment": 1 } },
+        { "key": "B", "text": "I stay a little alert, so I'm not suddenly caught off guard", "textHi": "मैं थोड़ा सतर्क रहता/रहती हूं, ताकि अचानक धोखा न हो", "scores": { "trustProtection": 3 } },
+        { "key": "C", "text": "Even in calm moments, I doubt my own worth", "textHi": "मुझे शांति के बीच भी अपनी worth पर शक होता है", "scores": { "selfWorth": 2 } },
+        { "key": "D", "text": "I'm genuinely able to feel at peace", "textHi": "मैं वाकई शांति महसूस कर पाता/पाती हूं", "scores": { "overthinking": 0 } }
       ]
     }
   ]

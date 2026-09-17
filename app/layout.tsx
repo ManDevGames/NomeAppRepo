@@ -3,7 +3,14 @@ import type { ReactNode } from 'react'
 import { Fraunces, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import { UtmCapture } from '@/components/UtmCapture'
+import { LanguageProvider } from '@/lib/i18n/LanguageContext'
+import { ThemeProvider } from '@/components/providers/ThemeProvider'
 import './globals.css'
+
+// Runs before hydration so the stored theme (or system preference, on a
+// first visit) applies to the very first paint — without this, the page
+// would flash light before switching to dark.
+const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('rpa:theme');var dark=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(dark)document.documentElement.classList.add('dark')}catch(e){}})()`
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })
 const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-serif', display: 'swap' })
@@ -40,11 +47,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
+    <html lang="en" className={`${inter.variable} ${fraunces.variable}`} suppressHydrationWarning>
       <body className="font-sans">
-        <UtmCapture />
-        {children}
-        <Analytics />
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <ThemeProvider>
+          <LanguageProvider>
+            <UtmCapture />
+            {children}
+            <Analytics />
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

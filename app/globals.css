@@ -3,12 +3,79 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-cream-50: 253 251 247;
+    --color-cream-100: 250 246 238;
+    --color-cream-200: 245 236 221;
+
+    --color-blush-50: 253 245 244;
+    --color-blush-100: 250 234 231;
+    --color-blush-200: 243 214 209;
+
+    --color-rose-50: 250 241 238;
+    --color-rose-100: 242 221 214;
+    --color-rose-200: 227 188 177;
+    --color-rose-300: 207 149 135;
+    --color-rose-400: 184 117 106;
+    --color-rose-500: 156 92 82;
+
+    --color-sage-50: 244 246 242;
+    --color-sage-100: 230 235 225;
+    --color-sage-200: 205 216 195;
+    --color-sage-400: 139 165 124;
+    --color-sage-500: 111 138 95;
+
+    --color-charcoal-50: 247 246 245;
+    --color-charcoal-100: 233 230 226;
+    --color-charcoal-300: 168 159 150;
+    --color-charcoal-500: 107 98 89;
+    --color-charcoal-700: 69 63 57;
+    --color-charcoal-800: 51 46 41;
+    --color-charcoal-900: 36 31 28;
+  }
+
+  :root.dark {
+    --color-cream-50: 28 26 23;
+    --color-cream-100: 36 32 25;
+    --color-cream-200: 46 41 33;
+
+    --color-blush-50: 46 34 32;
+    --color-blush-100: 58 41 38;
+    --color-blush-200: 74 51 46;
+
+    --color-rose-50: 46 33 30;
+    --color-rose-100: 61 43 38;
+    --color-rose-200: 92 64 56;
+    --color-rose-300: 217 167 152;
+    --color-rose-400: 201 137 125;
+    --color-rose-500: 184 117 106;
+
+    --color-sage-50: 30 36 25;
+    --color-sage-100: 42 51 34;
+    --color-sage-200: 60 74 50;
+    --color-sage-400: 139 165 124;
+    --color-sage-500: 127 161 109;
+
+    --color-charcoal-50: 42 39 35;
+    --color-charcoal-100: 58 53 47;
+    --color-charcoal-300: 138 128 120;
+    --color-charcoal-500: 176 168 157;
+    --color-charcoal-700: 216 209 199;
+    --color-charcoal-800: 236 230 220;
+    --color-charcoal-900: 248 244 238;
+  }
+
   html {
     scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
   }
 
   body {
-    @apply bg-cream-50 text-charcoal-800 antialiased;
+    @apply bg-cream-50 text-charcoal-800 antialiased transition-colors duration-200;
   }
 
   h1,
