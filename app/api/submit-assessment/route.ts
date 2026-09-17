@@ -9,11 +9,11 @@ import {
   normalizeWhatsappNumber,
 } from '@/lib/validation'
 import { sanitizeUtm } from '@/lib/utm'
+import { sendResultEmail } from '@/lib/email'
+import { getPatternById } from '@/lib/patterns'
 import type { SubmitAssessmentRequest, SubmitAssessmentResponse } from '@/types'
 
 export const runtime = 'nodejs'
-
-const DUPLICATE_WINDOW_HOURS = 24
 
 function errorResponse(message: string, status: number) {
   return NextResponse.json({ error: message }, { status })
@@ -58,29 +58,6 @@ export async function POST(request: Request) {
     return errorResponse('Something went wrong on our end. Please try again shortly.', 500)
   }
 
-  // Duplicate-submission guard: same normalized WhatsApp number within the
-  // last 24 hours. Server-side only — never trust a client-supplied flag.
-  const windowStart = new Date(Date.now() - DUPLICATE_WINDOW_HOURS * 60 * 60 * 1000).toISOString()
-  const { data: recentLead, error: duplicateCheckError } = await supabase
-    .from('leads')
-    .select('id')
-    .eq('whatsapp_number', whatsapp)
-    .gte('created_at', windowStart)
-    .limit(1)
-    .maybeSingle()
-
-  if (duplicateCheckError) {
-    console.error('submit-assessment: duplicate check failed', duplicateCheckError)
-    return errorResponse('Something went wrong on our end. Please try again shortly.', 500)
-  }
-
-  if (recentLead) {
-    return errorResponse(
-      'It looks like you recently completed this assessment. Please use your previous result.',
-      409,
-    )
-  }
-
   // Scoring happens here, in trusted server code — the browser only ever
   // submits raw answers, never final scores.
   const { scores, primaryPattern, secondaryPattern } = scoreAssessment(answers)
@@ -110,6 +87,18 @@ export async function POST(request: Request) {
   if (submitError || !leadId) {
     console.error('submit-assessment: rpc failed', submitError)
     return errorResponse('Something went wrong saving your result. Please try again.', 500)
+  }
+
+  // Best-effort: the lead is already saved and the result link works
+  // regardless, so an email provider hiccup shouldn't fail the submission
+  // the user is waiting on.
+  const primaryPatternData = getPatternById(primaryPattern)
+  if (primaryPatternData) {
+    try {
+      await sendResultEmail({ to: email, name, leadId: leadId as string, primaryPatternName: primaryPatternData.name })
+    } catch (err) {
+      console.error('submit-assessment: result email failed to send', err)
+    }
   }
 
   const response: SubmitAssessmentResponse = { leadId: leadId as string }

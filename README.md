@@ -84,7 +84,9 @@ See `.env.example`. Required:
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | client + server | public, safe to expose, constrained by RLS |
 | `SUPABASE_SERVICE_ROLE_KEY` | server only | **never** prefix with `NEXT_PUBLIC_`, never log it, never send it to the browser |
 | `WHATSAPP_BUSINESS_NUMBER` | server only (`lib/whatsapp.ts`) | digits only with country code, e.g. `91XXXXXXXXXX`, no `+` |
-| `NEXT_PUBLIC_SITE_URL` | metadata/SEO | your production URL, e.g. `https://pattern.mindurmind.org.in` |
+| `NEXT_PUBLIC_SITE_URL` | metadata/SEO, result emails | your production URL, e.g. `https://pattern.mindurmind.org.in` |
+| `RESEND_API_KEY` | server only (`lib/email.ts`) | optional — emails the result after submission; app works without it, it just won't email |
+| `RESEND_FROM_EMAIL` | server only (`lib/email.ts`) | optional — must be on a domain verified in Resend; falls back to a shared test sender if unset |
 
 ## 4. Creating an admin user
 
