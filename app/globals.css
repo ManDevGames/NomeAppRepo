@@ -78,30 +78,21 @@
     @apply bg-cream-50 text-charcoal-800 antialiased transition-colors duration-200;
   }
 
+  /*
+   * Fraunces/Inter have no Devanagari glyphs, so headings fall back to
+   * var(--font-serif-hi) (see tailwind.config.ts's fontFamily.serif, which
+   * this inherits from) for any Devanagari characters — a browser only
+   * pulls a fallback font for the specific glyphs the primary font can't
+   * render, so this covers Devanagari text wherever it appears (the
+   * language toggle, but also fixed bilingual quotes like a pattern's
+   * "headline") without needing to key off <html lang>.
+   */
   h1,
   h2,
   h3,
   h4 {
-    font-family: var(--font-serif), Georgia, serif;
+    font-family: theme('fontFamily.serif');
     @apply text-charcoal-900;
-  }
-
-  /*
-   * Fraunces/Inter have no Devanagari glyphs, so when the language toggle
-   * switches to Hindi (LanguageContext sets <html lang="hi">), the browser
-   * would otherwise substitute an arbitrary system font for that script —
-   * mismatched size and baseline against the surrounding Latin text/layout.
-   * These rules swap in Devanagari-native fonts for that case.
-   */
-  html[lang='hi'] body {
-    font-family: var(--font-sans-hi), var(--font-sans), system-ui, sans-serif;
-  }
-
-  html[lang='hi'] h1,
-  html[lang='hi'] h2,
-  html[lang='hi'] h3,
-  html[lang='hi'] h4 {
-    font-family: var(--font-serif-hi), var(--font-serif), Georgia, serif;
   }
 
   :focus-visible {

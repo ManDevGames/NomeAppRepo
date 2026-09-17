@@ -54,8 +54,20 @@ const config: Config = {
         // app/layout.tsx — not literal font-family names, since the fonts
         // are self-hosted/optimized by next/font rather than loaded from a
         // CDN link.
-        serif: ['var(--font-serif)', 'Georgia', 'serif'],
-        sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        //
+        // The Devanagari fonts are included as a fallback in BOTH stacks,
+        // not just under html[lang='hi'] — several places (a pattern's
+        // "headline" quote, the pattern-cycle "thought" stage) always embed
+        // a Devanagari quote regardless of the active UI language. A
+        // browser only pulls a fallback font for the specific glyphs the
+        // primary font can't render, so this doesn't change how Latin text
+        // looks. Without it, those glyphs fall through to whatever
+        // Devanagari font the OS happens to provide — which is nothing on
+        // Vercel's serverless Chromium (used for the result PDF), so it
+        // rendered as tofu boxes there despite looking fine in a normal
+        // desktop browser that does have a system Devanagari fallback.
+        serif: ['var(--font-serif)', 'var(--font-serif-hi)', 'Georgia', 'serif'],
+        sans: ['var(--font-sans)', 'var(--font-sans-hi)', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         soft: '0 2px 20px -4px rgba(69, 63, 57, 0.08)',
