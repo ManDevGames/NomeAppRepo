@@ -32,6 +32,12 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
+  // Keeps <html lang> in sync so the html[lang='hi'] font rule in
+  // globals.css (Devanagari-capable fonts) applies whenever Hindi is active.
+  useEffect(() => {
+    document.documentElement.lang = language
+  }, [language])
+
   const toggleLanguage = useCallback(() => {
     setLanguage((prev) => {
       const next: Language = prev === 'en' ? 'hi' : 'en'

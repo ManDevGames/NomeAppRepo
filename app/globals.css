@@ -86,6 +86,24 @@
     @apply text-charcoal-900;
   }
 
+  /*
+   * Fraunces/Inter have no Devanagari glyphs, so when the language toggle
+   * switches to Hindi (LanguageContext sets <html lang="hi">), the browser
+   * would otherwise substitute an arbitrary system font for that script —
+   * mismatched size and baseline against the surrounding Latin text/layout.
+   * These rules swap in Devanagari-native fonts for that case.
+   */
+  html[lang='hi'] body {
+    font-family: var(--font-sans-hi), var(--font-sans), system-ui, sans-serif;
+  }
+
+  html[lang='hi'] h1,
+  html[lang='hi'] h2,
+  html[lang='hi'] h3,
+  html[lang='hi'] h4 {
+    font-family: var(--font-serif-hi), var(--font-serif), Georgia, serif;
+  }
+
   :focus-visible {
     @apply outline-none ring-2 ring-rose-300 ring-offset-2 ring-offset-cream-50;
   }
