@@ -30,9 +30,40 @@ interface QuestionCopy {
   seeResult: string
 }
 
+interface CycleStageLabels {
+  trigger: string
+  thought: string
+  emotion: string
+  reaction: string
+  impact: string
+  repeat: string
+}
+
+interface ResultCopy {
+  resultOf: (name: string) => string
+  heading: string
+  primaryLabel: string
+  secondaryLabel: string
+  experienceTitle: string
+  triggersTitle: string
+  cycleTitle: string
+  cycleStages: CycleStageLabels
+  cycleNote: string
+  disclaimer: string
+  ctaTitle: string
+  ctaBody: string
+  whatsappLabel: string
+  notFoundTitle: string
+  notFoundBody: string
+  retakeLabel: string
+  errorTitle: string
+  errorBody: string
+}
+
 interface UiCopy {
   home: HomeCopy
   question: QuestionCopy
+  result: ResultCopy
   languageToggle: string
   themeToggleToDark: string
   themeToggleToLight: string
@@ -91,6 +122,35 @@ export const uiText: Record<Language, UiCopy> = {
       continue_: 'Continue →',
       seeResult: 'See My Result →',
     },
+    result: {
+      resultOf: (name) => `${name}’s Result`,
+      heading: 'Your Relationship Pattern',
+      primaryLabel: 'Your Primary Pattern',
+      secondaryLabel: 'Your Secondary Pattern',
+      experienceTitle: 'You May Experience',
+      triggersTitle: 'Common Triggers',
+      cycleTitle: 'Your Pattern Cycle',
+      cycleStages: {
+        trigger: 'Trigger',
+        thought: 'Thought',
+        emotion: 'Emotion',
+        reaction: 'Reaction',
+        impact: 'Impact',
+        repeat: 'Repeats',
+      },
+      cycleNote: 'Without a shift, this cycle tends to loop back to the trigger again.',
+      disclaimer:
+        'This is a self-awareness tool, not a clinical diagnosis. Your result reflects your answers today — it isn’t a fixed label, and it can change as you do.',
+      ctaTitle: 'Want to work deeper on this?',
+      ctaBody:
+        'You can connect with us directly on WhatsApp to talk through your result and explore it further — no pressure, just a conversation.',
+      whatsappLabel: 'Talk About My Result on WhatsApp',
+      notFoundTitle: 'We couldn’t find that result',
+      notFoundBody: 'This link may have expired or the assessment wasn’t completed. You’re welcome to take it again.',
+      retakeLabel: 'Retake the Assessment',
+      errorTitle: 'Something went wrong',
+      errorBody: 'We’re having trouble loading this result right now. Please try again shortly.',
+    },
     languageToggle: 'हिन्दी',
     themeToggleToDark: 'Dark',
     themeToggleToLight: 'Light',
@@ -146,6 +206,35 @@ export const uiText: Record<Language, UiCopy> = {
       back: '← पीछे',
       continue_: 'आगे बढ़ें →',
       seeResult: 'मेरा परिणाम देखें →',
+    },
+    result: {
+      resultOf: (name) => `${name} का परिणाम`,
+      heading: 'आपका रिश्ते का पैटर्न',
+      primaryLabel: 'आपका मुख्य पैटर्न',
+      secondaryLabel: 'आपका दूसरा पैटर्न',
+      experienceTitle: 'आप ये महसूस कर सकते/सकती हैं',
+      triggersTitle: 'सामान्य ट्रिगर',
+      cycleTitle: 'आपका पैटर्न चक्र',
+      cycleStages: {
+        trigger: 'ट्रिगर',
+        thought: 'विचार',
+        emotion: 'भावना',
+        reaction: 'प्रतिक्रिया',
+        impact: 'असर',
+        repeat: 'दोहराव',
+      },
+      cycleNote: 'बिना किसी बदलाव के, यह चक्र फिर से ट्रिगर की ओर लौट सकता है।',
+      disclaimer:
+        'यह एक आत्म-जागरूकता का उपकरण है, कोई चिकित्सीय निदान नहीं। आपका परिणाम आज के आपके जवाबों को दर्शाता है — यह कोई स्थायी लेबल नहीं है, और आपके साथ बदल सकता है।',
+      ctaTitle: 'क्या इस पर और गहराई से काम करना चाहेंगे?',
+      ctaBody:
+        'आप अपने परिणाम पर बात करने और इसे और समझने के लिए सीधे व्हाट्सएप पर हमसे जुड़ सकते/सकती हैं — कोई दबाव नहीं, बस एक बातचीत।',
+      whatsappLabel: 'व्हाट्सएप पर अपने परिणाम पर बात करें',
+      notFoundTitle: 'हमें वह परिणाम नहीं मिला',
+      notFoundBody: 'यह लिंक शायद समाप्त हो गया हो या आकलन पूरा नहीं हुआ हो। आप इसे दोबारा ले सकते/सकती हैं।',
+      retakeLabel: 'आकलन फिर से लें',
+      errorTitle: 'कुछ गड़बड़ हो गई',
+      errorBody: 'अभी इस परिणाम को लोड करने में समस्या हो रही है। कृपया थोड़ी देर बाद फिर कोशिश करें।',
     },
     languageToggle: 'अंग्रेज़ी',
     themeToggleToDark: 'डार्क',

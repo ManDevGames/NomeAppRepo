@@ -48,12 +48,22 @@ export interface PatternCycle {
 export interface Pattern {
   id: PatternId
   name: string
-  /** The short Hindi/English "inner thought" headline shown alongside the pattern name. */
+  /** Hindi translation of `name`, shown when the language toggle is set to Hindi. */
+  nameHi: string
+  /** The short Hindi "inner thought" headline shown alongside the pattern name — shared across both languages by design. */
   headline: string
   shortDescription: string
+  /** Hindi translation of `shortDescription`. */
+  shortDescriptionHi: string
   experiencePoints: string[]
+  /** Hindi translation of `experiencePoints`, in the same order. */
+  experiencePointsHi: string[]
   triggers: string[]
+  /** Hindi translation of `triggers`, in the same order. */
+  triggersHi: string[]
   cycle: PatternCycle
+  /** Hindi translation of `cycle`. */
+  cycleHi: PatternCycle
 }
 
 export interface AssessmentAnswer {

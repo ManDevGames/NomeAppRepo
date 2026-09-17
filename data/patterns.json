@@ -7,8 +7,10 @@
     {
       "id": "abandonment",
       "name": "Abandonment Fear Pattern",
+      "nameHi": "छोड़े जाने के डर का पैटर्न",
       "headline": "कहीं वह मुझे छोड़ न दे।",
       "shortDescription": "You may notice a deep sensitivity to signs of distance or withdrawal from people you care about — even small ones — and a strong pull to hold on tightly when that happens.",
+      "shortDescriptionHi": "आपको करीबी लोगों से दूरी या पीछे हटने के संकेतों के प्रति गहरी संवेदनशीलता महसूस हो सकती है — छोटे संकेतों के प्रति भी — और ऐसा होने पर कसकर पकड़ने की एक मजबूत इच्छा हो सकती है।",
       "experiencePoints": [
         "A racing sense of worry when someone goes quiet or takes longer to reply",
         "Difficulty relaxing into closeness without wondering when it might end",
@@ -16,13 +18,15 @@
         "Reading distance into ordinary, unrelated silences",
         "Relief that can feel almost as intense as the original worry, once reassured"
       ],
-      "triggers": [
-        "Delayed replies",
-        "Change in tone",
-        "Cancelled plans",
-        "Someone pulling away during conflict",
-        "Being left out of plans"
+      "experiencePointsHi": [
+        "जब कोई चुप हो जाए या जवाब देने में देर करे, तो चिंता का तेज़ी से बढ़ना",
+        "यह सोचे बिना करीबी में सहज होना मुश्किल होना कि यह कब खत्म हो सकता है",
+        "यह आश्वासन बार-बार चाहना कि रिश्ता ठीक है",
+        "सामान्य, असंबंधित चुप्पी में भी दूरी महसूस करना",
+        "आश्वासन मिलने के बाद जो राहत मिलती है, वह लगभग उतनी ही तीव्र हो सकती है जितनी शुरुआती चिंता"
       ],
+      "triggers": ["Delayed replies", "Change in tone", "Cancelled plans", "Someone pulling away during conflict", "Being left out of plans"],
+      "triggersHi": ["जवाब में देरी", "लहजे में बदलाव", "रद्द हुई योजनाएं", "झगड़े के दौरान किसी का दूर हो जाना", "योजनाओं से बाहर रखा जाना"],
       "cycle": {
         "trigger": "Someone you care about seems distant or slow to respond",
         "thought": "\"कहीं वह मुझे छोड़ न दे।\" — They might be pulling away from me",
@@ -30,13 +34,23 @@
         "reaction": "Seeking reassurance, checking in repeatedly, or pre-emptively withdrawing first",
         "impact": "The relationship can start to feel more effortful, for both people",
         "repeat": "The next sign of distance — real or imagined — restarts the cycle"
+      },
+      "cycleHi": {
+        "trigger": "कोई करीबी इंसान दूर या जवाब देने में धीमा लगता है",
+        "thought": "\"कहीं वह मुझे छोड़ न दे।\" — शायद वे मुझसे दूर जा रहे हैं",
+        "emotion": "चिंता, घबराहट, बेचैनी",
+        "reaction": "आश्वासन मांगना, बार-बार हाल-चाल पूछना, या पहले ही खुद को दूर कर लेना",
+        "impact": "रिश्ता दोनों लोगों के लिए ज्यादा मेहनत-भरा महसूस होने लगता है",
+        "repeat": "दूरी का अगला संकेत — असली हो या काल्पनिक — चक्र को फिर शुरू कर देता है"
       }
     },
     {
       "id": "overthinking",
       "name": "Overthinking & Anxiety Pattern",
+      "nameHi": "अधिक सोचने और चिंता का पैटर्न",
       "headline": "इसका मतलब क्या है?",
       "shortDescription": "You may find your mind replaying conversations and moments long after they're over, searching for hidden meaning in things that were said — or left unsaid.",
+      "shortDescriptionHi": "आपका मन बातचीत और पलों को उनके खत्म होने के बाद भी बार-बार दोहरा सकता है, कही गई — या न कही गई — बातों में छिपे मतलब को ढूंढते हुए।",
       "experiencePoints": [
         "Re-reading messages multiple times, looking for a different meaning",
         "Rehearsing conversations before they happen, and replaying them after",
@@ -44,13 +58,15 @@
         "Struggling to simply take a neutral comment at face value",
         "Noticing your mind jumps to worst-case interpretations"
       ],
-      "triggers": [
-        "Ambiguous messages",
-        "Unclear plans",
-        "A shift in someone's usual tone",
-        "Being left with unanswered questions",
-        "Silence after a disagreement"
+      "experiencePointsHi": [
+        "संदेशों को बार-बार पढ़ना, कोई अलग मतलब ढूंढने के लिए",
+        "बातचीत होने से पहले उसकी रिहर्सल करना, और बाद में उसे दोहराते रहना",
+        "एक ही स्थिति के बारे में बार-बार सोचने से मानसिक थकान महसूस करना",
+        "किसी सामान्य टिप्पणी को सीधे तौर पर लेने में संघर्ष करना",
+        "ध्यान देना कि आपका मन सबसे बुरी संभावना की ओर चला जाता है"
       ],
+      "triggers": ["Ambiguous messages", "Unclear plans", "A shift in someone's usual tone", "Being left with unanswered questions", "Silence after a disagreement"],
+      "triggersHi": ["अस्पष्ट संदेश", "अस्पष्ट योजनाएं", "किसी के सामान्य लहजे में बदलाव", "अनुत्तरित सवालों का रह जाना", "असहमति के बाद की चुप्पी"],
       "cycle": {
         "trigger": "An ambiguous comment, message, or change in behaviour",
         "thought": "\"इसका मतलब क्या है?\" — What does this actually mean?",
@@ -58,13 +74,23 @@
         "reaction": "Analysing, re-reading, searching for clarity or hidden signals",
         "impact": "Mental energy goes into analysis rather than the relationship itself",
         "repeat": "The next ambiguous moment reopens the same search for meaning"
+      },
+      "cycleHi": {
+        "trigger": "एक अस्पष्ट टिप्पणी, संदेश, या व्यवहार में बदलाव",
+        "thought": "\"इसका मतलब क्या है?\" — इसका असल मतलब क्या है?",
+        "emotion": "बेचैनी, अनिश्चितता, मानसिक अशांति",
+        "reaction": "विश्लेषण करना, बार-बार पढ़ना, स्पष्टता या छिपे संकेत ढूंढना",
+        "impact": "मानसिक ऊर्जा रिश्ते के बजाय विश्लेषण में चली जाती है",
+        "repeat": "अगला अस्पष्ट पल फिर से मतलब की उसी खोज को शुरू कर देता है"
       }
     },
     {
       "id": "selfWorth",
       "name": "Self-Worth Pattern",
+      "nameHi": "अपनी अहमियत का पैटर्न",
       "headline": "क्या मैं पर्याप्त हूं?",
       "shortDescription": "You may notice your sense of being \"enough\" in a relationship shifting based on how the other person responds to you, rather than staying steady on its own.",
+      "shortDescriptionHi": "आप महसूस कर सकते/सकती हैं कि रिश्ते में खुद के 'पर्याप्त' होने का एहसास दूसरे व्यक्ति की प्रतिक्रिया के अनुसार बदलता है, बजाय इसके कि वह खुद अपने आप में स्थिर रहे।",
       "experiencePoints": [
         "Measuring your value by how much attention or affection you're receiving",
         "Comparing yourself to others the person you care about is close to",
@@ -72,13 +98,15 @@
         "Difficulty accepting compliments or reassurance at face value",
         "Feeling especially low after any perceived rejection, however small"
       ],
-      "triggers": [
-        "Being compared to someone else",
-        "Feeling overlooked or unchosen",
-        "Criticism, even when gently given",
-        "A partner's attention going elsewhere",
-        "Not receiving expected acknowledgment"
+      "experiencePointsHi": [
+        "अपनी कीमत को इस आधार पर आंकना कि आपको कितना ध्यान या स्नेह मिल रहा है",
+        "अपने करीबी इंसान के करीबी लोगों से खुद की तुलना करना",
+        "यह शांत, लगातार बना रहने वाला सवाल कि क्या आप वाकई चाहे जाते हैं",
+        "तारीफ या आश्वासन को सीधे तौर पर स्वीकार करने में मुश्किल होना",
+        "किसी भी महसूस हुए अस्वीकार के बाद खासतौर पर उदास महसूस करना, चाहे वह कितना भी छोटा क्यों न हो"
       ],
+      "triggers": ["Being compared to someone else", "Feeling overlooked or unchosen", "Criticism, even when gently given", "A partner's attention going elsewhere", "Not receiving expected acknowledgment"],
+      "triggersHi": ["किसी और से तुलना किया जाना", "नज़रअंदाज़ या अनचुना महसूस करना", "आलोचना, भले ही नरमी से की गई हो", "साथी का ध्यान कहीं और जाना", "अपेक्षित सराहना न मिलना"],
       "cycle": {
         "trigger": "A moment of comparison, criticism, or feeling overlooked",
         "thought": "\"क्या मैं पर्याप्त हूं?\" — Am I enough?",
@@ -86,13 +114,23 @@
         "reaction": "Withdrawing, over-trying to prove your worth, or seeking validation",
         "impact": "Your sense of self becomes tied to someone else's response",
         "repeat": "The next comparison or perceived slight reopens the same question"
+      },
+      "cycleHi": {
+        "trigger": "तुलना, आलोचना, या नज़रअंदाज़ महसूस होने का एक पल",
+        "thought": "\"क्या मैं पर्याप्त हूं?\" — क्या मैं काफी हूं?",
+        "emotion": "खुद पर शक, शांत शर्म, उदासी",
+        "reaction": "पीछे हटना, अपनी अहमियत साबित करने की अधिक कोशिश करना, या मान्यता ढूंढना",
+        "impact": "आपकी खुद की पहचान किसी और की प्रतिक्रिया से जुड़ जाती है",
+        "repeat": "अगली तुलना या महसूस हुई अनदेखी उसी सवाल को फिर से खोल देती है"
       }
     },
     {
       "id": "trustProtection",
       "name": "Trust & Emotional Protection Pattern",
+      "nameHi": "भरोसे और भावनात्मक सुरक्षा का पैटर्न",
       "headline": "क्या मैं इस व्यक्ति पर भरोसा कर सकता/सकती हूं?",
       "shortDescription": "You may find yourself keeping a careful emotional distance, even in relationships that matter to you — staying alert, just in case.",
+      "shortDescriptionHi": "आप खुद को सावधानी से भावनात्मक दूरी बनाए रखते हुए पा सकते/सकती हैं, यहां तक कि उन रिश्तों में भी जो आपके लिए मायने रखते हैं — बस सतर्क रहने के लिए।",
       "experiencePoints": [
         "Holding a part of yourself back, even when things are going well",
         "Watching closely for signs that someone might let you down",
@@ -100,13 +138,15 @@
         "A tendency to test whether someone is reliable before opening up",
         "Feeling safer when you keep some emotional independence"
       ],
-      "triggers": [
-        "Being asked to be vulnerable",
-        "Someone getting emotionally close, quickly",
-        "Past experiences resurfacing in a new relationship",
-        "Being let down in a small way",
-        "Pressure to commit or open up"
+      "experiencePointsHi": [
+        "चीज़ें अच्छी चल रही हों तब भी अपने एक हिस्से को रोके रखना",
+        "इस बात पर ध्यान से नज़र रखना कि कोई आपको निराश तो नहीं करेगा",
+        "समय के साथ भी भरोसे में पूरी तरह सहज होने में मुश्किल होना",
+        "खुलने से पहले यह परखने की प्रवृत्ति कि कोई भरोसेमंद है या नहीं",
+        "जब आप थोड़ी भावनात्मक स्वतंत्रता बनाए रखते हैं तो ज्यादा सुरक्षित महसूस करना"
       ],
+      "triggers": ["Being asked to be vulnerable", "Someone getting emotionally close, quickly", "Past experiences resurfacing in a new relationship", "Being let down in a small way", "Pressure to commit or open up"],
+      "triggersHi": ["कमजोर दिखने के लिए कहा जाना", "किसी का जल्दी भावनात्मक रूप से करीब आना", "पिछले अनुभवों का किसी नए रिश्ते में फिर से उभरना", "किसी छोटी बात पर निराश होना", "प्रतिबद्ध होने या खुलने का दबाव"],
       "cycle": {
         "trigger": "A moment that asks for trust or vulnerability",
         "thought": "\"क्या मैं इस व्यक्ति पर भरोसा कर सकता/सकती हूं?\" — Can I trust this person?",
@@ -114,13 +154,23 @@
         "reaction": "Holding back, staying alert, keeping some distance as protection",
         "impact": "Closeness can feel capped, even in safe relationships",
         "repeat": "The next opportunity for closeness triggers the same caution"
+      },
+      "cycleHi": {
+        "trigger": "एक ऐसा पल जो भरोसे या कमजोर दिखने की मांग करता है",
+        "thought": "\"क्या मैं इस व्यक्ति पर भरोसा कर सकता/सकती हूं?\" — क्या मैं इस इंसान पर भरोसा कर सकता/सकती हूं?",
+        "emotion": "सतर्कता, चौकसी",
+        "reaction": "पीछे हटना, सतर्क रहना, सुरक्षा के तौर पर थोड़ी दूरी बनाए रखना",
+        "impact": "करीबी सुरक्षित रिश्तों में भी सीमित महसूस हो सकती है",
+        "repeat": "करीबी का अगला मौका वही सतर्कता फिर से जगा देता है"
       }
     },
     {
       "id": "peoplePleasing",
       "name": "People-Pleasing & Boundary Pattern",
+      "nameHi": "दूसरों को खुश रखने और सीमाओं का पैटर्न",
       "headline": "Relationship ठीक रखने के लिए मुझे कितना adjust करना चाहिए?",
       "shortDescription": "You may notice yourself adjusting your own needs, opinions, or plans to keep the peace — sometimes before you've even considered what you actually want.",
+      "shortDescriptionHi": "आप खुद को अपनी ज़रूरतों, राय, या योजनाओं को शांति बनाए रखने के लिए एडजस्ट करते हुए पा सकते/सकती हैं — कभी-कभी यह सोचने से पहले ही कि आप असल में क्या चाहते/चाहती हैं।",
       "experiencePoints": [
         "Saying yes when you would rather say no",
         "Feeling responsible for other people's moods",
@@ -128,13 +178,15 @@
         "Avoiding disagreement even on things that matter to you",
         "Feeling resentment build up after repeatedly accommodating others"
       ],
-      "triggers": [
-        "Sensing someone is unhappy",
-        "Being asked for something you don't want to give",
-        "Disagreement or conflict beginning to surface",
-        "Fear of being seen as difficult",
-        "Someone else's disappointment"
+      "experiencePointsHi": [
+        "ना कहने का मन होते हुए भी हां कहना",
+        "दूसरों के मूड के लिए खुद को जिम्मेदार महसूस करना",
+        "अपनी ज़रूरतों को खुद से भी बताने में मुश्किल होना",
+        "उन बातों पर भी असहमति से बचना जो आपके लिए मायने रखती हैं",
+        "बार-बार दूसरों को एडजस्ट करने के बाद नाराज़गी का जमा होना महसूस करना"
       ],
+      "triggers": ["Sensing someone is unhappy", "Being asked for something you don't want to give", "Disagreement or conflict beginning to surface", "Fear of being seen as difficult", "Someone else's disappointment"],
+      "triggersHi": ["महसूस होना कि कोई नाखुश है", "ऐसी चीज़ मांगी जाना जो आप नहीं देना चाहते/चाहतीं", "असहमति या टकराव का उभरना शुरू होना", "मुश्किल समझे जाने का डर", "किसी और की निराशा"],
       "cycle": {
         "trigger": "A request, disagreement, or sign that someone is unhappy",
         "thought": "\"Relationship ठीक रखने के लिए मुझे कितना adjust करना चाहिए?\" — How much should I adjust to keep this okay?",
@@ -142,13 +194,23 @@
         "reaction": "Accommodating, agreeing, setting your own needs aside",
         "impact": "Your own needs stay unspoken and can quietly build into resentment",
         "repeat": "The next request or disagreement restarts the same adjustment"
+      },
+      "cycleHi": {
+        "trigger": "एक अनुरोध, असहमति, या यह संकेत कि कोई नाखुश है",
+        "thought": "\"रिश्ता ठीक रखने के लिए मुझे कितना एडजस्ट करना चाहिए?\" — इसे ठीक रखने के लिए मुझे कितना एडजस्ट करना चाहिए?",
+        "emotion": "असहजता, अपराधबोध, चीज़ों को सुलझाने की इच्छा",
+        "reaction": "एडजस्ट करना, सहमत होना, अपनी ज़रूरतों को किनारे रखना",
+        "impact": "आपकी अपनी ज़रूरतें अनकही रह जाती हैं और चुपचाप नाराज़गी में बदल सकती हैं",
+        "repeat": "अगला अनुरोध या असहमति वही एडजस्टमेंट फिर शुरू कर देती है"
       }
     },
     {
       "id": "repeatingPattern",
       "name": "Repeating Relationship Pattern",
+      "nameHi": "बार-बार दोहराने वाला पैटर्न",
       "headline": "लोग बदलते हैं, लेकिन कहानी वही क्यों रहती है?",
       "shortDescription": "You may notice a familiar shape to your relationships — different people, but a similar story playing out: the same kind of ending, the same kind of hurt, or the same kind of dynamic.",
+      "shortDescriptionHi": "आपको अपने रिश्तों में एक जानी-पहचानी बनावट दिख सकती है — अलग-अलग लोग, पर एक जैसी कहानी: वैसा ही अंत, वैसा ही दर्द, या वैसी ही डायनामिक।",
       "experiencePoints": [
         "Noticing the same conflict or disappointment showing up in different relationships",
         "Feeling drawn to familiar dynamics, even when they haven't worked before",
@@ -156,13 +218,15 @@
         "Difficulty identifying what, specifically, keeps repeating",
         "Wondering why circumstances change but outcomes don't"
       ],
-      "triggers": [
-        "The early stage of a new relationship starting to feel familiar",
-        "Recognising a dynamic from a past relationship",
-        "A relationship ending in a familiar way",
-        "Others pointing out a pattern you hadn't named",
-        "Reflecting on past relationships together"
+      "experiencePointsHi": [
+        "अलग-अलग रिश्तों में वही टकराव या निराशा बार-बार सामने आते देखना",
+        "जानी-पहचानी डायनामिक की ओर खिंचाव महसूस करना, भले ही वह पहले काम न आई हो",
+        "रिश्तों के चलने के ढंग में एक जाना-पहचाना एहसास",
+        "यह पहचानने में मुश्किल होना कि असल में क्या बार-बार दोहरा रहा है",
+        "यह सोचना कि हालात बदलते हैं पर नतीजे क्यों नहीं बदलते"
       ],
+      "triggers": ["The early stage of a new relationship starting to feel familiar", "Recognising a dynamic from a past relationship", "A relationship ending in a familiar way", "Others pointing out a pattern you hadn't named", "Reflecting on past relationships together"],
+      "triggersHi": ["किसी नए रिश्ते के शुरुआती दौर का जाना-पहचाना लगना", "किसी पुराने रिश्ते की डायनामिक को पहचानना", "किसी रिश्ते का एक जाने-पहचाने तरीके से खत्म होना", "दूसरों का उस पैटर्न को इंगित करना जिसे आपने नाम नहीं दिया था", "पिछले रिश्तों के बारे में साथ में सोचना"],
       "cycle": {
         "trigger": "A new relationship or situation begins to unfold",
         "thought": "\"लोग बदलते हैं, लेकिन कहानी वही क्यों रहती है?\" — People change, so why does the story stay the same?",
@@ -170,6 +234,14 @@
         "reaction": "Falling into familiar roles or choices without fully deciding to",
         "impact": "The same kind of ending or difficulty tends to resurface",
         "repeat": "The next relationship or situation begins the cycle again"
+      },
+      "cycleHi": {
+        "trigger": "एक नया रिश्ता या स्थिति सामने आने लगती है",
+        "thought": "\"लोग बदलते हैं, लेकिन कहानी वही क्यों रहती है?\" — लोग बदलते हैं, फिर कहानी वही क्यों रहती है?",
+        "emotion": "जानी-पहचानी भावना के साथ शांत स्वीकृति",
+        "reaction": "बिना पूरी तरह तय किए, जाने-पहचाने रोल या चुनावों में उतर जाना",
+        "impact": "वैसा ही अंत या मुश्किल फिर से सामने आने लगती है",
+        "repeat": "अगला रिश्ता या स्थिति चक्र को फिर से शुरू कर देती है"
       }
     }
   ]
