@@ -158,7 +158,7 @@ export function LeadForm({ answers }: LeadFormProps) {
             aria-describedby={errors.consent ? 'lead-consent-error' : undefined}
             className="mt-1 h-4 w-4 shrink-0 rounded border-charcoal-300 text-rose-400 focus:ring-rose-300"
           />
-          <span>मैं अपना Relationship Pattern Result प्राप्त करना चाहता/चाहती हूं।</span>
+          <span>I'd like to receive my Relationship Pattern result.</span>
         </label>
         {errors.consent && (
           <p id="lead-consent-error" className="mt-1.5 text-xs text-rose-500">
