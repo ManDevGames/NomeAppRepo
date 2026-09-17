@@ -8,7 +8,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })
 const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-serif', display: 'swap' })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://pattern.mindurmind.org.in'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://pattern.mindurmind.org.in'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
